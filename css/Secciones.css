@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+.badge{
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.letracarousel{
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(13, 0, 199);
+    font-weight: bold;
+}
+.slide, .carousel-inner > .carousel-item > img {
+    height: 500px;
+    background-position: center;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-size: cover;/*imagen al 100% del ancho*/
+    background-attachment: fixed; /*posicion fija para la imagen*/
+}
+
+/* nav menu de navegacion */
+.fondnavbar{
+    background: rgb(39, 39, 39);
+    height: 100px;
+}
+.navbi{
+  background: rgb(39, 39, 39);
+}
+.logo{
+    font-size: 25px;
+}
+#letramenu{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+}
+#letramenu:hover {
+    color: rgb(184, 185, 103);
+    transition: all .4s ease;
+}
+#navbarDropdownMenuLink:hover{
+    color: rgb(184, 185, 103);
+    transition: all .4s ease;
+}
+.dropdown-item:hover {
+    background: rgb(184, 185, 103);
+}
+
+
+
+/*Section*/
+/*modal*/
+#classmodal:hover{
+    color: rgb(184, 185, 103);
+}
+
+.menuvisassss{
+    padding-left: 6%;
+}
+
+.banner2{
+    background: url(../img/bandera.jpg);
+    height: 200px;
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-size: cover;/*imagen al 100% del ancho*/
+    background-attachment: fixed; /*posicion fija para la imagen*/
+    text-align: center;
+}
+.banner2letra{
+    color: white;
+    padding-top: 3%;
+    height: 300px;
+    width: 100%;
+}
+/*menu legales*/
+.menulegales{
+    background: rgb(39, 39, 39);
+}
+.titulolegales{
+    padding-top: 17px;
+    color: white;
+}
+.cardslegales{
+    padding-top: 17px;
+}
+
+
+.banner3{
+    background: url(../img/mexico.jpg);
+    height: 200px;
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-size: cover;/*imagen al 100% del ancho*/
+    background-attachment: fixed; /*posicion fija para la imagen*/
+    text-align: center;
+}
+.banner3letra{
+    color: white;
+    padding-top: 5%;
+    height: 300px;
+    width: 100%;
+}
+.contacto{
+    color: white;
+    background: rgb(39, 39, 39);
+}
+.imgface{
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.letrasface{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.titulocontacto{
+    padding-top: 17px;
+}
+.comunicacion{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+#amarillo{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#amarillo:hover{
+    background: rgb(184, 185, 103);
+}
+
+footer{
+    background: rgb(0, 0, 0);
+    height: 20%;
+    color: white;
+}
+.textfooter{
+    padding-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+    footer{
+        height: 55px;        
+    }
+    .textfooter{
+        padding-top: 2%;
+        font-size: 10px;
+    }
+}
+.formularocontact{
+    background: rgb(39, 39, 39);
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-size: cover;/*imagen al 100% del ancho*/
+    text-align: center;
+}
+/*Seccion de la galeria de imagenes*/
+.galeria img{
+    width: 230px;
+    height: 230px;
+    align-content: center;
+    transition: 1s;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.galeria img:hover{
+    transform: scale(1.1);
+}
+.container{
+    max-width: 100%;
+    width: 15000%;
+    margin: auto;
+}
+.galeria .container{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.foto{
+    width: 20%;
+    margin-bottom: 25px;
+}
+.foto img{
+    width: 70%;
+    height: 80%;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    .galeria .contenedor{
+        flex-direction: column;
+    }
+}
+
+.bannner{
+    height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+    .banner {
+        height: 250px;
+    }
+}

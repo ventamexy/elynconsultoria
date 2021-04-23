@@ -1,0 +1,36 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://unionmigrante.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://unionmigrante.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://utnime.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://utnime.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.unionmigrante.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.unionmigrante.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.utnime.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.utnime.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://unionmigrante.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://unionmigrante.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://utnime.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://utnime.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.unionmigrante.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.unionmigrante.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.utnime.elynconsultoriainternacional.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.utnime.elynconsultoriainternacional.com$      [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+RewriteCond %{HTTP_HOST} ^www\.elynconsultoriainternacional\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/elynconsultoriainternacional\.com\/" [R=301,L]
+

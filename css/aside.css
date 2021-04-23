@@ -1,0 +1,243 @@
+/* INICIO DE LA SECCION VISAS PARA TURISTAS, 
+termina en la linea 86*/
+/* edicion de navbar */
+#letramenutramitedevisas:hover{
+    color: rgb(157, 172, 255);
+    transition: all .4s ease;
+}
+#letramenutramitesmigratorios:hover{
+    color: rgb(157, 172, 255);
+    transition: all .4s ease;
+}
+#navbarDropdownMenuLink:hover {
+    color: rgb(157, 172, 255);
+    transition: all .4s ease;
+}
+.dropdown-item:hover {
+    background: rgb(157, 172, 255);
+}
+.fondnavbar1{
+    background: rgb(39, 39, 39);
+    height: 82px;
+    z-index: 15;
+    position: relative;
+}
+/*Ajustes para tamños moviles*/
+@media only screen and (max-width: 600px) {
+    .fondnavbar1 {
+        height: 72px;
+    }
+}
+.view {
+    width: 100%;
+    width: calc(99% - 165px);
+    float: right;
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) {
+    .view {
+        height: 250px;
+    }
+}
+.container {
+    width: 100%;
+    width: calc(99% - 165px);
+    float: right;
+    position: relative;
+}
+.containerfooter {
+    width: 100%;
+    width: calc(99% - 165px);
+    float: right;
+    background: black;
+    color: white;
+    position: relative;
+}
+.card{
+    background: rgba(0, 0, 0, .7);
+    text-align: justify;
+}
+h6{
+    color: white;
+}
+/*Ajustes para tamños moviles*/
+@media only screen and (max-width: 600px) {
+    .botonera {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        z-index: 9;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    .view{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .containerfooter {
+        width: 100%;
+    }
+}
+
+.botonera {
+    top: 0%;
+    float: left;
+    flex-shrink: 0 !important;
+    width: 200px;
+    background: rgb(39, 39, 39);
+    height: 100% !important;
+    z-index: 10;
+    position: fixed;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+aside::-webkit-scrollbar {
+    width: 2px;
+    background: rgb(110, 226, 255);
+}
+.sidebar {
+    top: 0%;
+    float: left;
+    flex-shrink: 0 !important;
+    width: 150px;
+    background: rgb(39, 39, 39);
+    height: 100% !important;
+    position: fixed;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(110, 226, 255);
+}
+.menu-bar {
+    cursor: pointer;
+    float: left;
+    position: fixed;
+    z-index: 11;
+    padding-top: 50px;
+}
+@media only screen and (min-width: 600px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+.abrir {
+    transform: translateX(150px);
+}
+.contenido {
+    width: 100%;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+section{
+    padding-bottom: 1300px;
+    background: rgb(230, 229, 229);
+}
+@media only screen and (min-width: 600px) {
+    section {
+        padding-bottom: 1300px;
+    }
+}
+
+.sidemenu {
+    padding-top: 130px;
+}
+#btnaside{
+    width: 95%;
+    font-size: 10px;
+    border-radius: 10px;
+}
+.form{
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.sidemenu_visas_de_trabajo{
+    padding-top: 70%;
+}
+
+/* INICIO SECCION TRAMITES MIGRATORIOS*/
+.sidemenutramitesmigratorios{
+    padding-top: 70%;
+}
+
+/* INICIO SECCION TRAMIES PARA MEXICO*/
+.sidemenutramitesmexico{
+    padding-top: 70%;
+}
+
+/* INICIO SECCION TRAMITES CONSULARES */
+.imtramitesconsulares{
+    background: url();
+}
+
+/* INICIO SECCION TRAMITES MIGRATORIOS COMO TRABAJADORES */
+.sidemenutramitestrabajadores{
+    padding-top: 70%;
+}
+
+/* INICIO SECCION TRAMITES PARA EMPRESAS Y EMPLEADORES */
+#encabezado1{
+    color: black;
+}
+.cardsemp{
+    background: rgba(0, 0, 0, .7);
+    text-align: justify;
+}
+
+/*INICIO SECCION REGISTRO DE EMPRESAS*/
+.viewregistroempresas{
+    width: 100%;
+    width: calc(99% - 165px);
+    float: right;
+    position: relative;
+    height: 100vh;
+    background: url(../img/portada12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) {
+    .viewregistroempresas {
+        width: 100%;
+    }
+}
+
+/* INICIO SECCION REGISTRO DE EMPLEADOS EN EL EXTRANJERO */
+.viewregistroempleados{
+    width: 100%;
+    width: calc(99% - 165px);
+    float: right;
+    position: relative;
+    height: 100vh;
+    background: url(../img/portada15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) {
+    .viewregistroempleados {
+        width: 100%;
+    }
+}
