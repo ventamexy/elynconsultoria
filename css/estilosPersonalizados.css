@@ -68,6 +68,10 @@ li {
     color: var(--color-white);
 }
 
+.sitiosWebRelacionados a i {
+    color: rgb(0, 0, 0, 0.5);
+}
+
 .navbar {
     background-color: var(--color-principal)!important;
 }
