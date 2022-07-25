@@ -57,7 +57,6 @@
 </head>
 <body>
     <div>
-        <div class="fondnavbar"></div>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar p-0">
             <a class="navbar-brand p-3 redireccionMenuPrincipal" href="index.html">
@@ -65,7 +64,11 @@
                 <span class="sr-only">(current)</span>
                 <h6 class="encabezado2 d-flex justify-content-start">Abogados migratorios, consulares y de visas</h6>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent-7"
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent-7"
             aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,31 +76,20 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- inicio del menu -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" data-scroll href="#" id="letramenu">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a 
-                        class="nav-link dropdown-toggle" 
-                        id="navbarDropdownMenuLink" 
-                        data-toggle="dropdown"
-                        aria-haspopup="true" 
-                        aria-expanded="false">Trámite de visas
-                        </a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámite de visas</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a 
-                            class="dropdown-item" 
-                            href="paginas/Visas de turistas/visasdeturistas.html">
-                                Visas de turistas
-                            </a>
-                            <a 
-                            class="dropdown-item" 
-                            href="paginas/Visas de trabajo/visasdetrabajo.html">
-                                Visas de trabajo
-                            </a>
+                            <a class="dropdown-item" href="paginas/Visas de turistas/visasdeturistas.html">Visas de
+                                turistas</a>
+                            <a class="dropdown-item" href="paginas/Visas de trabajo/visasdetrabajo.html">Visas de
+                                trabajo</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Trámites migratorios</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item"
@@ -113,7 +105,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item"
@@ -127,9 +119,46 @@
                                 href="paginas/Registro de empresas/registrodeempresas.html">Registro de empresas</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll href="https://www.mexicanlaborforce.com/" target=”_blank”
-                            id="letramenu">Mexican Labor Force</a>
+                    <li class="nav-item dropdown">
+                        <a 
+                        class="nav-link dropdown-toggle" 
+                        id="navbarPaginasWeb" 
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true" 
+                        aria-expanded="false">Sitios web relacionados</a>
+                        <div class="dropdown-menu dropdown-primary sitiosWebRelacionados" aria-labelledby="navbarPaginasWeb">
+                            <a 
+                            class="dropdown-item"
+                            href="https://echeverriaasociados.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Echeverria asociados
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://globalmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Global Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://visasmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Visas Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://unionmigrante.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Unión Migrante
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://incometaxesusamex.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Income Taxes USAMEX
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-scroll href="videos.html" id="letramenu">Galería videos</a>
@@ -703,6 +732,9 @@
             </div>
         </div>
     </footer>
+    <button type="button" class="irAbajo">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</button>
     <script src="assets/js/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
