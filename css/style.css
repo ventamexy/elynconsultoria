@@ -26,22 +26,18 @@ header,
 }
 
 .top-nav-collapse {
-    background-color: #39448c !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    background-color: var(--color-principal)!important;
 }
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #39448c !important;
+        background: var(--color-principal)!important;
     }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-        background: #39448c !important;
+        background: var(--color-principal)!important;
     }
 }
 
