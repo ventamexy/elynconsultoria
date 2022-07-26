@@ -57,14 +57,14 @@ $(document).on("scroll", function() {
 });
 
 
-$(document).on("click", ".irAbajo", function(){
-    let scrollY = $(document)[0].scrollingElement;
-    let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
-    window.scroll({
-        top: alturaScrollY,
-        behavior: 'smooth'
-    });
-});
+// $(document).on("click", ".irAbajo", function(){
+//     let scrollY = $(document)[0].scrollingElement;
+//     let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
+//     window.scroll({
+//         top: alturaScrollY,
+//         behavior: 'smooth'
+//     });
+// });
 
 $(document).on("click", ".irArriba", function(){
     window.scroll({
@@ -74,3 +74,16 @@ $(document).on("click", ".irArriba", function(){
 });
 
 $(".anio-actual").text(new Date().getFullYear());
+
+
+// CURL
+$(document).on("click", ".irAbajo", function(){
+    $.ajax({
+        url:"assets/server/curl.php",
+        method:"POST",
+        dataType:"JSON",
+        success:function(data){
+            console.log(data);
+        }
+    });
+}); 
