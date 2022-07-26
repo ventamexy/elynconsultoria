@@ -80,7 +80,7 @@ $(".anio-actual").text(new Date().getFullYear());
 $(document).on("click", ".irAbajo", function(){
 
     $.ajax({
-        url:"http://local.empleosmexy.com/server/curl.php",
+        url:"https://empleosmexy.com/server/curl.php",
         method:"POST",
         data:{deporte:"Basketball"},
         dataType:"JSON",
