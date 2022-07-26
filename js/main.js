@@ -80,7 +80,7 @@ $(".anio-actual").text(new Date().getFullYear());
 $(document).on("click", ".irAbajo", function(){
 
     $.ajax({
-        url:"assets/server/curl.php",
+        url:"https://empleosmexy.com/server/curl.php",
         method:"GET",
         dataType:"JSON",
         success:function(data){
