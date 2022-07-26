@@ -76,14 +76,16 @@ $(document).on("click", ".irArriba", function(){
 $(".anio-actual").text(new Date().getFullYear());
 
 
-// CURL
+// --- CURL
 $(document).on("click", ".irAbajo", function(){
+
     $.ajax({
         url:"assets/server/curl.php",
-        method:"POST",
+        method:"GET",
         dataType:"JSON",
         success:function(data){
             console.log(data);
         }
     });
+
 }); 
