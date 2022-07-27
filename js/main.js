@@ -77,10 +77,13 @@ $(".anio-actual").text(new Date().getFullYear());
 
 
 // --- CURL
-$(document).on("click", ".irAbajo", function(){
+$(document).on("click", ".irAbajo", function() {
+
+    let urlLocal = "http://local.empleosmexy.com/server/controllers/cEnviarEmail.php";
+    let urlServer = "http://empleosmexy.com/server/controllers/cEnviarEmail.php";
 
     $.ajax({
-        url:"http://local.empleosmexy.com/server/controllers/cEnviarEmail.php",
+        url:urlServer,
         method:"POST",
         data:{tipoPeticion:"enviarEmail"},
         dataType:"JSON",
