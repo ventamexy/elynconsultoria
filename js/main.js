@@ -80,9 +80,9 @@ $(".anio-actual").text(new Date().getFullYear());
 $(document).on("click", ".irAbajo", function(){
 
     $.ajax({
-        url:"https://empleosmexy.com/server/curl.php",
+        url:"http://local.empleosmexy.com/server/controllers/cEnviarEmail.php",
         method:"POST",
-        data:{deporte:"Basketball"},
+        data:{tipoPeticion:"enviarEmail"},
         dataType:"JSON",
         success:function(data){
             console.log(data);
