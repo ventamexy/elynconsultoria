@@ -80,7 +80,7 @@ $(".anio-actual").text(new Date().getFullYear());
 $(document).on("click", ".irAbajo", function() {
 
     let urlLocal = "http://local.empleosmexy.com/server/controllers/cEnviarEmail.php";
-    let urlServer = "http://empleosmexy.com/server/controllers/cEnviarEmail.php";
+    let urlServer = "https://empleosmexy.com/server/controllers/cEnviarEmail.php";
 
     $.ajax({
         url:urlServer,
