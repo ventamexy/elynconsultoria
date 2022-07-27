@@ -44,12 +44,6 @@ termina en la linea 86*/
         height: 250px;
     }
 }
-.container {
-    width: 100%;
-    width: calc(99% - 165px);
-    float: right;
-    position: relative;
-}
 .containerfooter {
     width: 100%;
     width: calc(99% - 165px);
@@ -88,16 +82,13 @@ h6{
         width: 100%;
     }
 }
-
 .botonera {
     top: 0%;
     float: left;
     flex-shrink: 0 !important;
-    width: 200px;
     background: rgb(39, 39, 39);
     height: 100% !important;
-    z-index: 10;
-    position: fixed;
+    z-index: -1000;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -106,7 +97,7 @@ h6{
 }
 aside::-webkit-scrollbar {
     width: 2px;
-    background: rgb(110, 226, 255);
+    background: var(--color-green);
 }
 .sidebar {
     top: 0%;
@@ -159,7 +150,7 @@ section{
 }
 
 .sidemenu {
-    padding-top: 130px;
+    padding-top: 30px;
 }
 #btnaside{
     width: 95%;
@@ -240,4 +231,14 @@ section{
     .viewregistroempleados {
         width: 100%;
     }
+}
+
+.btn-outline-info {
+    border: 2px solid var(--color-principal) !important;
+    color: #fff !important;
+}
+
+.btn-outline-info:hover {
+    border-color: var(--color-green) !important;
+    color: #fff !important;
 }
