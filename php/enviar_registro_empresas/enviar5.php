@@ -43,6 +43,6 @@ $contenido =
 
     if (mail($destino, $asunto, $contenido))
     echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente.');</script>";
-    echo "<script type='text/javascript'>window.location.href='../../paginas/Registro de empresas/registrodeempresas.html';</script>";
+    echo "<script type='text/javascript'>window.location.href='../../paginas/../registroEmpresas/registrodeempresas.html';</script>";
 
 ?>
