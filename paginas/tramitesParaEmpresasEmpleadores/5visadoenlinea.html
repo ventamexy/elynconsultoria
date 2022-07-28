@@ -1,515 +1,946 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Elyn Consultoria Internacional</title>
     <link rel="icon" href="../../img/icon.ico">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../assets/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- Otros estilos -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/root.css">
+    <link rel="stylesheet" href="../../css/otrosEstilos.css">
+    <link rel="stylesheet" href="../../css/estilosPersonalizados.css">
+    <!-- OLD -->
     <!-- Material Design Bootstrap -->
     <link href="../../css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="../../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/Secciones.css">
     <link rel="stylesheet" href="../../css/aside.css">
-
-    <!-- llamar css para framework semantic -->
-    <link rel="stylesheet" href="../../css/semantic.min.css">
-
     <!-- lightbox -->
     <link rel="stylesheet" href="../../css/lightbox.min.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118653511-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-118653511-2');
-    </script>
-
 </head>
-
 <body>
-
-<!-- inicio de aside bloque izquierdo-->
-<aside class="botonera">
-    <nav>
-        <div class="nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down sidemenu">
-                <a data-scroll href="tramitesparaempresas.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Recruitment of personnel</button>
-                </a>
-                <a data-scroll href="3representacion.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consular representation</button>
-                </a>
-                <a data-scroll href="4citaconsular.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consulate appointment</button>
-                </a>
-                <a data-scroll href="5visadoenlinea.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Online visa</button>
-                </a>
-                <a data-scroll href="6certificacion.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Labor certification</button>
-                </a>
-                <a data-scroll href="7viajes.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Travel to the consulate</button>
-                </a>
-                <a data-scroll href="8pais.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Country</button>
-                </a>
-                <a data-scroll href="9clasificacion.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Classification of visas</button>
-                </a>
-                <a data-scroll href="10perfil.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Management profile</button>
-                </a>
-                <a data-scroll href="11renovaciones.html">
-                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Renewal contrato</button>
-                </a>
-            </ul>
-        </div>
-    </nav>
-</aside>
-<div class="sidebar">
-    <ul id="nav-mobile" class=" sidemenu">
-        <a data-scroll href="tramitesparaempresas.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Recruitment of personnel</button>
-        </a>
-        <a data-scroll href="3representacion.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consular representation</button>
-        </a>
-        <a data-scroll href="4citaconsular.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consulate appointment</button>
-        </a>
-        <a data-scroll href="5visadoenlinea.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Online visa</button>
-        </a>
-        <a data-scroll href="6certificacion.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Labor certification</button>
-        </a>
-        <a data-scroll href="7viajes.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Travel to the consulate</button>
-        </a>
-        <a data-scroll href="8pais.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Country</button>
-        </a>
-        <a data-scroll href="9clasificacion.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Classification of visas</button>
-        </a>
-        <a data-scroll href="10perfil.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Management profile</button>
-        </a>
-        <a data-scroll href="11renovaciones.html">
-            <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Renewal contrato</button>
-        </a>
-    </ul>
-</div>
-
-<div class="contenido">
-
-    <!-- incio de header o presentacion-->
     <div>
-
-        <!--fondo nabvar-->
-        <div class="fondnavbar1"></div>
-
-        <!--inicio navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <a class="navbar-brand" href="#">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar p-0">
+            <a class="navbar-brand p-3 redireccionMenuPrincipal" href="index.html">
                 Elyn Consultoria Internacional
                 <span class="sr-only">(current)</span>
                 <h6 class="encabezado2 d-flex justify-content-start">Abogados migratorios, consulares y de visas</h6>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent-7"
+            aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
+                    <!-- inicio del menu -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../../index.html" id="letramenutramitedevisas">Inicio</a>
+                        <a class="nav-link" href="index.html" id="letramenu">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trámite de visas</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámite de visas</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../Visas de turistas/visasdeturistas.html">Visas de turistas</a>
-                            <a class="dropdown-item" href="../Visas de trabajo/visasdetrabajo.html">Visas de trabajo</a>
+                            <a 
+                            class="dropdown-item" 
+                            href="visasdeturistas.html">
+                                Visas de turistas
+                            </a>
+                            <a 
+                            class="dropdown-item" 
+                            href="../VisasTrabajo/visasdetrabajo.html">
+                                Visas de trabajo
+                            </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trámites migratorios</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámites migratorios</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../Tramites migratorios/tramitesmigratorios.html">Trámites migratorios</a>
-                            <a class="dropdown-item" href="../Tramites para mexico/tramitesparamexico.html">Trámites para México</a>
-                            <a class="dropdown-item" href="../../tramitesConsulares/tramitesconsulares.html">Trámites consulares</a>
+                            <a class="dropdown-item"
+                                href="../tramitesMigratorios/tramitesmigratorios.html">Trámites migratorios</a>
+                            <a class="dropdown-item"
+                                href="../tramitesParaMexico/tramitesparamexico.html">Trámites para México</a>
+                            <a class="dropdown-item" href="../tramitesConsulares/tramitesconsulares.html">
+                                Trámites consulares
+                            </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../Tramites migratorios como trabajadores/tramitesmigratorioscomotrabajadores.html">Trámites migratorios como trabajadores</a>
+                            <a class="dropdown-item"
+                                href="../tramitesMigratoriosComoTrabajadores/tramitesmigratorioscomotrabajadores.html">Trámites
+                                migratorios como trabajadores</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../tramitesParaEmpresasEmpleadores/tramitesparaempresas.html">Trámites para empresas y empleadores</a>
-                            <a class="dropdown-item" href="../../registro_empleados/registrodeempleados.html">Registro de empleados en el extranjero</a>
+                            <a class="dropdown-item"
+                                href="../tramitesParaEmpresasEmpleadores/tramitesparaempresas.html">Trámites
+                                para empresas y empleadores</a>
+                            <a class="dropdown-item"
+                                href="../registro_empleados/registrodeempleados.html">Registro de empleados en
+                                el extranjero</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../../registroEmpresas/registrodeempresas.html">Registro de empresas</a>
+                            <a class="dropdown-item"
+                                href="../registroEmpresas/registrodeempresas.html">Registro de empresas</a>
                         </div>
                     </li>
-                                        <li class="nav-item">
-                        <a class="nav-link" data-scroll href="https://mexicanlaborforce.com/" target=”_blank” id="letramenu">Mexican Labor Force</a>
+                    <li class="nav-item dropdown">
+                        <a 
+                        class="nav-link dropdown-toggle" 
+                        id="navbarPaginasWeb" 
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true" 
+                        aria-expanded="false">Sitios web relacionados</a>
+                        <div class="dropdown-menu dropdown-primary sitiosWebRelacionados" aria-labelledby="navbarPaginasWeb">
+                            <a 
+                            class="dropdown-item"
+                            href="https://echeverriaasociados.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Echeverria asociados
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://globalmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Global Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://visasmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Visas Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://unionmigrante.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Unión Migrante
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://incometaxesusamex.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Income Taxes USAMEX
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-<a class="nav-link" data-scroll href="../../videos.html" id="letramenu">Galería videos</a>                    </li> 
+                        <a class="nav-link" href="videos.html" id="letramenu">Galería videos</a>
+                    </li>
                     <li class="nav-item">
-                        <!-- Google translate  -->
-                        <div id="google_translate_element"></div>
-                        <script type="text/javascript">
-                            function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({
-                                    pageLanguage: 'en',
-                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                                    multilanguagePage: true
-                                }, 'google_translate_element');
-                            }
-                        </script>
-                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <a class="nav-link" href="tramitesRealizados.html" id="letramenu">Trámites realizados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeriaImagenes.html" id="letramenu">Galería de imágenes</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <!-- banner cover inicio-->
-        <div class="view">
-                <!-- Mask & flexbox options-->
-                <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-                    <!-- Content -->
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8MmbrmuNx8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <!-- Content -->
-                </div>
-                <!-- Mask & flexbox options-->
+    </div>
+    <main class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12 col-md-4 p-0">
+                <!-- inicio de aside bloque izquierdo-->
+                <aside class="botonera">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <ul id="nav-mobile" class="right hide-on-med-and-down sidemenu">
+                                <a data-scroll href="tramitesparaempresas.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Recruitment of personnel</button>
+                                </a>
+                                <a data-scroll href="3representacion.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consular representation</button>
+                                </a>
+                                <a data-scroll href="4citaconsular.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consulate appointment</button>
+                                </a>
+                                <a data-scroll href="5visadoenlinea.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Online visa</button>
+                                </a>
+                                <a data-scroll href="6certificacion.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Labor certification</button>
+                                </a>
+                                <a data-scroll href="7viajes.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Travel to the consulate</button>
+                                </a>
+                                <a data-scroll href="8pais.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Country</button>
+                                </a>
+                                <a data-scroll href="9clasificacion.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Classification of visas</button>
+                                </a>
+                                <a data-scroll href="10perfil.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Management profile</button>
+                                </a>
+                                <a data-scroll href="11renovaciones.html">
+                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Renewal contrato</button>
+                                </a>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
             </div>
-
-    </div>
-    <img src="../../img/flecha.png" width="50px;" alt="" class="menu-bar">
-    <!--inicio de mi cuerpo principal con los formularios-->
-    <section class="container">
-        <div class="ui container">
-            <form action="../../php/enviar_para_empresas/enviar5.php" class="ui form" id="frm-prueba" method="post">
-                <h4 class="ui dividing header">Form to online visa</h4>
+            <div class="col-12 col-md-8 p-0">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>First name: </label>
-                            <input type="text" name="nombre5" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Last name: </label>
-                            <input type="text" name="apellidos5" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Email: </label>
-                            <input type="email" name="email5" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Phone: </label>
-                            <input type="number" name="numero5" required>
-                        </div>
-                    </div>
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/8MmbrmuNx8U" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
                 </div>
-
-                <div class="field">
-                    <label>Company name: </label>
-                    <input type="text" name="empresa5" required>
-                </div>
-
-                <div class="field">
-                    <label>Subject: </label>
-                    <select name="subject5" id="" class="ui fluid dropdown">
-                        <option value="Comercio internacional e integracion">International trade and integration</option>
-                        <option value="Desarrollo económico">Economic development</option>
-                        <option value="Desarrollo producto y empresarial">Product and business development</option>
-                        <option value="Asuntos de género">Gender issues</option>
-                        <option value="Desarrollo social">Social development</option>
-                        <option value="Población y desarrollo">Population and development</option>
-                        <option value="Desarrollo sostenible y asentamientos humanos">Sustainable development and human settlements</option>
-                        <option value="Recursos naturales e infraestructura">Natural resources and infrastructure</option>
-                        <option value="Estadistícas">Statistics</option>
-                        <option value="Planificación para el desarrollo">Planning and development</option>
-                        <option value="construcción y desarrollo urbano">Construction and urban development</option>
-                    </select>
-                </div>
-
-                <div class="field">
-                    <label>Message:</label>
-                    <textarea name="mensaje5" class="form-control" required></textarea>
-                </div>
-
-                <p class="separador">If you´re able to, please give us a better idea of your needs. (Optional). HAVE YOUR EVER USED THE H-2BE
-                    PROGRAM BEFORE</p>
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="field">
-                            <label>aproximate number of worker requested?</label>
-                            <select name="trabajadores5" id="" class="ui fluid dropdown">
-                                <option value="1-5">1-5</option>
-                                <option value="6-10">6-10</option>
-                                <option value="10-20">10-20</option>
-                                <option value="20-30">20-30</option>
-                                <option value="30-40">30-40</option>
-                                <option value="40-50">40-50</option>
-                                <option value="50-more">50-more</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-12">
-                        <div class="field">
-                            <label>Business type? (example: landscape or construction): </label>
-                            <input type="text" name="tiponegocio5">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Is the business seasonal or peakload?: </label>
-                            <input type="text" name="negocio5">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Job description? Last the duties required of workers: </label>
-                            <input type="text" name="tipotrabajo5">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Salary or wages offered?: </label>
-                            <input type="number" name="salario5" placeholder="$">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="field">
-                            <label>Estimated cost of rent and utilities for workers? </label>
-                            <input type="number" name="utilidades5" placeholder="$">
-                        </div>
-                    </div>
-
-
+                <form action="../../php/enviar_para_empresas/enviar.php" class="ui form p-5" id="frm-prueba" method="post">
+                    <h4 class="ui dividing header">Form to online visa</h4>
                     <div class="row">
-                        <label class="col-md-12">Approximate length of employment from: </label>
-                        <div class="col-md-3 col-sm-3">
-                            <div class="field">
-                                <select name="diafechainicio5" id="" class="ui fluid dropdown">
-                                    <option value="">Day</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>First name: </label>
+                                <input class="form-control" type="text" name="nombre" required>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
-                            <div class="field">
-                                <select name="mesfechainicio5" id="" class="ui fluid dropdown">
-                                    <option value="">Month</option>
-                                    <option value="January">January</option>
-                                    <option value="February">February</option>
-                                    <option value="March">March</option>
-                                    <option value="April">April</option>
-                                    <option value="May">May</option>
-                                    <option value="June">June</option>
-                                    <option value="July">July</option>
-                                    <option value="August">August</option>
-                                    <option value="September">September</option>
-                                    <option value="October">October</option>
-                                    <option value="November">November</option>
-                                    <option value="December">December</option>
-                                </select>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Last name: </label>
+                                <input class="form-control" type="text" name="apellidos" required>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
-                            <div class="field">
-                                <select name="añofechainicio5" id="" class="ui fluid dropdown">
-                                    <option value="">Year</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
-                                </select>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Email: </label>
+                                <input class="form-control" type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Phone: </label>
+                                <input class="form-control" type="text" name="numero" required>
                             </div>
                         </div>
                     </div>
-
+                    <div class="form-group">
+                        <label>Company name: </label>
+                        <input class="form-control" type="text" name="empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject: </label>
+                        <select name="subject" id="" class="form-select">
+                            <option value="Comercio internacional e integracion">International trade and integration</option>
+                            <option value="Desarrollo económico">Economic development</option>
+                            <option value="Desarrollo producto y empresarial">Product and business development</option>
+                            <option value="Asuntos de género">Gender issues</option>
+                            <option value="Desarrollo social">Social development</option>
+                            <option value="Población y desarrollo">Population and development</option>
+                            <option value="Desarrollo sostenible y asentamientos humanos">Sustainable development and human settlements</option>
+                            <option value="Recursos naturales e infraestructura">Natural resources and infrastructure</option>
+                            <option value="Estadistícas">Statistics</option>
+                            <option value="Planificación para el desarrollo">Planning and development</option>
+                            <option value="construcción y desarrollo urbano">Construction and urban development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea name="mensaje" class="form-control" required></textarea>
+                    </div>
+                    <p class="separador">If you´re able to, please give us a better idea of your needs. (Optional). HAVE YOUR EVER USED THE H-2BE
+                        PROGRAM BEFORE</p>
                     <div class="row">
-                        <label class="col-md-12">to: </label>
-                        <div class="col-md-4 col-sm-3">
-                            <div class="field">
-                                <select name="diafechafin5" id="" class="ui fluid dropdown">
-                                    <option value="">Day</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>aproximate number of worker requested?</label>
+                                <select name="trabajadores" id="" class="form-select">
+                                    <option value="1-5">1-5</option>
+                                    <option value="6-10">6-10</option>
+                                    <option value="10-20">10-20</option>
+                                    <option value="20-30">20-30</option>
+                                    <option value="30-40">30-40</option>
+                                    <option value="40-50">40-50</option>
+                                    <option value="50-more">50-more</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3">
-                            <div class="field">
-                                <select name="mesfechafin5" id="" class="ui fluid dropdown">
-                                    <option value="">Month</option>
-                                    <option value="January">January</option>
-                                    <option value="February">February</option>
-                                    <option value="March">March</option>
-                                    <option value="April">April</option>
-                                    <option value="May">May</option>
-                                    <option value="June">June</option>
-                                    <option value="July">July</option>
-                                    <option value="August">August</option>
-                                    <option value="September">September</option>
-                                    <option value="October">October</option>
-                                    <option value="November">November</option>
-                                    <option value="December">December</option>
-                                </select>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="form-group">
+                                <label>Business type? (example: landscape or construction): </label>
+                                <input class="form-control" type="text" name="tiponegocio">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3">
-                            <div class="field">
-                                <select name="añofechafin5" id="" class="ui fluid dropdown">
-                                    <option value="">Year</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
-                                </select>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Is the business seasonal or peakload?: </label>
+                                <input class="form-control" type="text" name="negocio">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Job description? Last the duties required of workers: </label>
+                                <input class="form-control" type="text" name="tipotrabajo">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Salary or wages offered?: </label>
+                                <input class="form-control" type="text" name="salario" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Estimated cost of rent and utilities for workers? </label>
+                                <input class="form-control" type="text" name="utilidades" placeholder="$">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-12">Approximate length of employment from: </label>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <select name="diafechainicio" id="" class="form-select">
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <select name="mesfechainicio" id="" class="form-select">
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <select name="añofechainicio" id="" class="form-select">
+                                        <option value="">Year</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-12">to: </label>
+                            <div class="col-md-4 col-sm-3">
+                                <div class="form-group">
+                                    <select name="diafechafin" id="" class="form-select">
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3">
+                                <div class="form-group">
+                                    <select name="mesfechafin" id="" class="form-select">
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3">
+                                <div class="form-group">
+                                    <select name="añofechafin" id="" class="form-select">
+                                        <option value="">Year</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui error message"></div>
-                <div class="col d-flex justify-content-end">
-                    <div class="form-group mx-2">
-                        <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
-                            <li class=" fa fa-paper-plane pr-2"></li>
-                        </button>
+                    <div class="ui error message"></div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-group mx-2">
+                            <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
+                                <li class=" fa fa-paper-plane pr-2"></li>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </section>
-    <div class="containerfooter footer-copyright py-3 text-center">
-        <h6 class="textfooter d-flex justify-content-end">© 2018 All Rights Reserved, designed by DeVector Corp</h6>
-    </div>
-
-</div>
-
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="../../js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    </main>
+    <footer class="site-footer m-0">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+					<h2 class="tituloEquipoTrabajo text-white b-b-3px-white my-4 text-center text-uppercase">
+                        Únete a nuestro equipo de trabajo
+                    </h2>
+                    <div class="row contenedor-vacantes-principal">
+                        <ul class="mb-0 p-0 contenedor-titulo-vacante text-center">
+                            <li class="list-group-item active tituloVacantes d-flex justify-content-center align-items-center" aria-current="true">
+                                <i class="fa fa-check"></i>
+                                <h3 class="mb-0">Vacantes disponibles</h3>
+                            </li>
+                        </ul>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Abogados
+                                </li>
+                                <li class="list-group-item active-vacante">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Rel. Públicas
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Diseñador gráfico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ing. en sistemas computacionales
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Project manager
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Lic. en derecho 
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    C.P.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Lic. en administración de empresas
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Telemarketing y marketing digital
+                                </li>
+                                <li class="list-group-item">
+                                    -&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Asistente Legal
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Personal administrativo (bilingüe)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Reclutadores
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Asesores comerciales
+                                </li>
+                                <li class="list-group-item">
+                                    -&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="card mt-3">
+						<div class="card-header  tituloCV text-white">
+							<h4 class="card-title  mb-0 p-1">Enviar CV a:</h4>
+						</div>
+						<div class="card-body correosCV">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:info@elynconsultoriainternacional.com">info@elynconsultoriainternacional.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:elynconsultoria@yahoo.com">elynconsultoria@yahoo.com</a>
+                                </li>
+                                <li class="fst-italic">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    O traer documentación a nuestras instalaciones
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="row contenidoFooter justify-content-center justify-content-md-between footer-informacion">
+                <div class="row mx-0 p-5 seccion">
+                    <div class="col-12 col-md-6 overflow-hidden">
+                        <h3 class="text-center text-uppercase mb-0 titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            Sobre <span class="estilo-letra">Elyn Consultoria Internacional</span>:
+                        </h3>
+                        <h4 class="mb-0 text-uppercase mb-4">
+                            <span class="text-white">Dirección:</span>
+                        </h4>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1654610659670!5m2!1ses!2smx"
+                        width="" 
+                        height="" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="text-justify p-4 text-white">
+                            Nicolas Bravo 341, Centro, <br> Cd. Lázaro Cárdenas, Mich, MX.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center">
+                        <h3 class="b-b-titulo-principal text-center mb-4 text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Horarios </span>de atención:
+                        </h3>
+                        <div class="horarios-atencion">
+                            <div class="d-flex align-items-center justify-content-center p-0">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Lu. a Vi. de 07:00 am a 08:00 pm</span>
+                            </div>
+                            <div class="d-flex align-items-center p-0 mb-4 justify-content-center">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Sábados de 07:00 am a 02:00 pm</span>
+                            </div>
+                        </div>
+                        <h3 class="b-b-titulo-principal mb-4 text-center text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Teléfonos:</span>
+                        </h3>
+                        <div class="text-center">
+                            <ul class="p-2 links numeros-telefonicos">
+                                <li>
+                                    <a href="tel:+52 (753) 537 3761">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 3761
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 139 7277">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 139 7277
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 540 5810">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;+52 (753) 540 5810
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row justify-content-between ultimos-tweets mx-0 seccion">
+                    <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal mb-0 mb-5">
+                        <span class="estilo-letra">Últimas</span> Publicaciones:
+                    </h3>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/TramitesMigratoriosInternacionales"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/TramitesMigratoriosInternacionales" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/TramitesMigratoriosInternacionales">Elyn Consultoría Internacional/Migratoria</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/derechomigratorioev"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/derechomigratorioev" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/derechomigratorioev">Derecho Migratorio EV, Abogados</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/creasociedad"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/creasociedad" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/creasociedad">Registro de Negocios y Creación de Sociedades Mexy</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/sociaaboga"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/sociaaboga" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/sociaaboga">EV Despacho Juridico Internacional</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/FIRMALEGALMEXY"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/FIRMALEGALMEXY" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/FIRMALEGALMEXY">Echeverria Asociados, Consultoria Legal</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/mariposasconsular"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/mariposasconsular" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/mariposasconsular">Programas de Reunificacion Familiar</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/estudiovisas"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/estudiovisas" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/estudiovisas">Estudiantes Visados</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/trabajoveterinarios"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/trabajoveterinarios" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/trabajoveterinarios">VISAS TN y H-1B P/Profesionistas</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-5 seccion">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Redes</span> sociales:
+                        </h3>
+                        <nav class="redes-sociales text-center mb-4">
+                            <a 
+                            target="_blanck" 
+                            href="https://www.facebook.com/TramitesMigratoriosInternacionales">
+                                <i
+                                class="fa fa-facebook" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blanck" 
+                            href="https://twitter.com/icamar-constructora">
+                                <i
+                                class="fa fa-twitter" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="#">
+                                <i 
+                                class="fa fa-instagram"
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="https://www.youtube.com/channel/UCl7HIZRNlJPgbO18pK6N_7A">
+                                <i 
+                                class="fa fa-youtube"
+                                aria-hidden="true"></i>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="menu col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Consorcio de</span> empresas:
+                        </h3>
+                        <ul class="links paginasWeb mb-5 text-center">
+                            <li>
+                                Echeverria Asociados<br>
+                                <a target="_blank" href="https://echeverriaasociados.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.echeverriaasociados.com
+                                </a>
+                            </li>
+                            <li>
+                                Registro de negocios USA:<br>
+                                <a target="_blank" href="https://registrodenegociosusa.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.registrodenegociosusa.com
+                                </a>
+                            </li>
+                            <li>
+                                Unión Labor Force:<br>
+                                <a target="_blank" href="https://mexicanlaborforce.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.mexicanlaborforce.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-0 p-5 seccion">
+                    <h3 class="b-b-titulo-principal mb-4 text-uppercase titulo-principal pb-0 mb-3 text-center">
+                        <span class="estilo-letra">Conglomerados de</span> empresas:
+                    </h3>
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <ul class="links paginasWeb">
+                            <li>
+                                Creación de sociedades HLE:<br>
+                                <a target="_blank" href="https://creaciondesociedadeshle.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.creaciondesociedadeshle.com
+                                </a>
+                            </li>
+                            <li>
+                                Income Taxes USAMES:<br>
+                                <a target="_blank" href="https://incometaxesusamex.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.incometaxesusamex.com
+                                </a>
+                            </li>
+                            <li>
+                                Contabilizandote:<br>
+                                <a target="_blank" href="https://contabilizandote.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.contabilizandote.com
+                                </a>
+                            </li>
+                            <li>
+                                Labor MEXY:<br>
+                                <a target="_blank" href="https://labormexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.labormexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Empleos MEXY:<br>
+                                <a target="_blank" href="https://empleosmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.empleosmexy.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center pt-0">
+                        <ul class="links paginasWeb mb-5">
+                            <li>
+                                Global MEXY:<br>
+                                <a target="_blank" href="https://globalmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.globalmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                AS Carretera:<br>
+                                <a target="_blank" href="https://ascarretera.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.ascarretera.com
+                                </a>
+                            </li>
+                            <li>
+                                Visas MEXY:<br>
+                                <a target="_blank" href="https://visasmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.visasmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Unión Migrante:<br>
+                                <a target="_blank" href="https://unionmigrante.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.unionmigrante.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row mx-0 justify-content-center">
+                <p class="copyright fw-bold text-white">
+                    <span class="text-center d-block">©Todos los Derechos Reservados</span>
+                    <span class="text-center d-block">Elyn Consultoria Internacional <span class="anio-actual">2022</span></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <button type="button" class="irAbajo">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</button>
+    <script src="../../assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
-    <!-- llamar framwork semantic-->
-    <script type="text/javascript" src="../../js/semantic.min.js"></script>
-    <script type="text/javascript" src="../../js/abrir.js"></script>
-
-
+    <div id="fb-root"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
+    async defer></script>
+    <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
+    nonce="I0coc6CJ"></script>
     <!-- hacer funcinar la animacion del navbar -->
-    <script>
-        new WOW().init();
-    </script>
-
+    <script>new WOW().init();</script>
 </body>
-
 </html>
