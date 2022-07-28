@@ -55,9 +55,6 @@ termina en la linea 86*/
 .card{
     text-align: justify;
 }
-h6{
-    color: white;
-}
 /*Ajustes para tamños moviles*/
 @media only screen and (max-width: 600px) {
     .botonera {

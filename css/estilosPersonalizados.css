@@ -207,3 +207,8 @@ button.close {
 .bootbox-body {
     text-align: center;
 }
+
+.title-other {
+    color: #000;
+    font-weight: bolder!important;
+}
