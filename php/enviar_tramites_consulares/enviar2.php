@@ -17,6 +17,6 @@ $contenido =
 "\nMensaje: " . $mensaje;
     if (mail($destino, $asunto, $contenido))
     echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente.');</script>";
-    echo "<script type='text/javascript'>window.location.href='../../paginas/Tramites consulares/tramitesconsulares.html';</script>";
+    echo "<script type='text/javascript'>window.location.href='../../paginas/../tramitesConsulares/tramitesconsulares.html';</script>";
 
 ?>

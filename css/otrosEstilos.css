@@ -107,5 +107,9 @@ nav.navegacion-principal li:hover, .item-activo {
 }
   
 .principal-activo-item * {
+    color: #fff;
+}
+
+.principal-activo-item .item-activo {
     color: #fff!important;
 }
