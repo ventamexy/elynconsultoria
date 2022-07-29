@@ -183,8 +183,17 @@ section{
 
 /* INICIO SECCION TRAMITES PARA EMPRESAS Y EMPLEADORES */
 #encabezado1{
-    color: black;
+    color: #fff;
 }
+
+.titulo-seccion {
+    background-color: var(--color-principal);
+}
+
+.fondo-formulario {
+    background-color: #e7e7e7;
+}
+
 .cardsemp{
     background: rgba(0, 0, 0, .7);
     text-align: justify;
@@ -193,7 +202,6 @@ section{
 /*INICIO SECCION REGISTRO DE EMPRESAS*/
 .viewregistroempresas{
     width: 100%;
-    width: calc(99% - 165px);
     float: right;
     position: relative;
     height: 100vh;
