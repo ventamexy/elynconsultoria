@@ -1,25 +1,3 @@
-<?
-    $protocolo = "http://";   
-    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
-        $protocolo = "https://";   
-    }
-
-    $urlSitioWeb = $_SERVER['SERVER_NAME'];
-    // $urlSitioWebSinHTTP = explode($protocolo, $urlSitioWeb)[1];
-    $nombre = "";
-    $apellidoPaterno = "";
-    $apellidoMaterno = "";
-    $email = "";
-    $mensaje = "";
-    if ( $urlSitioWeb == "local.elynconsultoriainternacional.com" ) {
-        $nombre = "Example";
-        $apellidoPaterno = "Example";
-        $apellidoMaterno = "Example";
-        $email = "example@gmail.com";
-        $mensaje = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia voluptate velit ex alias nam repellendus, tempore numquam quis culpa corporis cum. Numquam, perspiciatis similique commodi ad laudantium deserunt fugit cumque.";
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
