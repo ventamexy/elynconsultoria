@@ -1,0 +1,733 @@
+<?
+    $protocolo = "http://";   
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+        $protocolo = "https://";   
+    }
+
+    $urlSitioWeb = $_SERVER['SERVER_NAME'];
+    // $urlSitioWebSinHTTP = explode($protocolo, $urlSitioWeb)[1];
+    $nombre = "";
+    $apellidoPaterno = "";
+    $apellidoMaterno = "";
+    $email = "";
+    $mensaje = "";
+    if ( $urlSitioWeb == "local.elynconsultoriainternacional.com" ) {
+        $nombre = "Example";
+        $apellidoPaterno = "Example";
+        $apellidoMaterno = "Example";
+        $email = "example@gmail.com";
+        $mensaje = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia voluptate velit ex alias nam repellendus, tempore numquam quis culpa corporis cum. Numquam, perspiciatis similique commodi ad laudantium deserunt fugit cumque.";
+    }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Elyn Consultoria Internacional | trámite de visas</title>
+    <link rel="icon" href="img/icon.ico">
+    <!-- SEO meta descriptions and meta title for google search results -->
+    <meta name="description" content="Elyn consultoria es un equipo de abogados capacitados para realizar cualquier tipo de trámites legales
+    en cuanto a visas y consulado.">
+    <meta name="keywords" content="visas, visado en linea, visas turistas, visas trabajadores, Elyn Consultoría, Abogados, Lázaro Cárdenas Michoacán">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Secciones.css">
+    <!-- Otros estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/otrosEstilos.css">
+    <link rel="stylesheet" href="css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/spinnerCarga.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+</head>
+<body>
+    <div>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar p-0">
+            <a class="navbar-brand p-3 redireccionMenuPrincipal" href="index.html">
+                Elyn Consultoria Internacional
+                <span class="sr-only">(current)</span>
+                <h6 class="encabezado2 d-flex justify-content-start">Abogados migratorios, consulares y de visas</h6>
+            </a>
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent-7"
+            aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <!-- inicio del menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="letramenu">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámite de visas</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a 
+                            class="dropdown-item" 
+                            href="paginas/VisasTuristas/visasdeturistas.html">
+                                Visas de turistas
+                            </a>
+                            <a 
+                            class="dropdown-item" 
+                            href="paginas/VisasTrabajo/visasdetrabajo.html">
+                                Visas de trabajo
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámites migratorios</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="paginas/tramitesMigratorios/tramitesmigratorios.html">Trámites migratorios</a>
+                            <a class="dropdown-item"
+                                href="paginas/Tramites para mexico/tramitesparamexico.html">Trámites para México</a>
+                            <a class="dropdown-item" href="paginas/../tramitesConsulares/tramitesconsulares.html">
+                                Trámites consulares
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                                href="paginas/Tramites migratorios como trabajadores/tramitesmigratorioscomotrabajadores.html">Trámites
+                                migratorios como trabajadores</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="paginas/tramitesParaEmpresasEmpleadores/tramitesparaempresas.html">Trámites
+                                para empresas y empleadores</a>
+                            <a class="dropdown-item"
+                                href="paginas/../registro_empleados/registrodeempleados.html">Registro de empleados en
+                                el extranjero</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                                href="paginas/../registroEmpresas/registrodeempresas.html">Registro de empresas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        class="nav-link dropdown-toggle" 
+                        id="navbarPaginasWeb" 
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true" 
+                        aria-expanded="false">Sitios web relacionados</a>
+                        <div class="dropdown-menu dropdown-primary sitiosWebRelacionados" aria-labelledby="navbarPaginasWeb">
+                            <a 
+                            class="dropdown-item"
+                            href="https://echeverriaasociados.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Echeverria asociados
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://globalmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Global Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://visasmexy.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Visas Mexy
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://unionmigrante.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Unión Migrante
+                            </a>
+                            <a class="dropdown-item"
+                            href="https://incometaxesusamex.com"
+                            target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Income Taxes USAMEX
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html" id="letramenu">Galería videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tramitesRealizados.html" id="letramenu">Trámites realizados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeriaImagenes.html" id="letramenu">Galería de imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" id="letramenu">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="container contenedor-title-seccion my-5 text-center">
+                <h1>FORMULARIO DE CONTACTO</h1>
+            </div>
+            <form class="frmPrecalificacion">
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group col-12 col-md-6 col-lg-3">
+                            <label for="nombre">Nombre:</label>
+                            <input 
+                            type="text" 
+                            class="form-control"
+                            name="nombre"
+                            value="<?=$nombre?>">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="form-group col-12 col-md-6 col-lg-3">
+                            <label for="nombre">Apellido paterno:</label>
+                            <input 
+                            type="text" 
+                            class="form-control"
+                            name="apellidoPaterno"
+                            value="<?=$apellidoPaterno?>">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="form-group col-12 col-md-6 col-lg-3">
+                            <label for="nombre">Apellido materno:</label>
+                            <input 
+                            type="text" 
+                            class="form-control"
+                            name="apellidoMaterno"
+                            value="<?=$apellidoMaterno?>">
+                        </div>
+                        <div class="form-group col-12 col-md-6 col-lg-3">
+                            <label for="nombre">Email:</label>
+                            <input 
+                            type="email" 
+                            class="form-control"
+                            name="email"
+                            value="<?=$email?>">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="nombre">Mensaje:</label>
+                            <textarea 
+                            class="form-control"
+                            rows="8"
+                            name="mensaje"><?=$mensaje?></textarea>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="row justify-content-center my-3">
+                            <button 
+                            class="btn btn-success btnEnviarPrecalificacion" 
+                            type="button">
+                                Enviar solicitud
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="cargaSpinner d-none">
+                <div class="circleA">
+                    <div class="circleB"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- politicas -->
+    <div class="alert alert-secondary alert-dismissible fade show d-flex justify-content-center d-none" role="alert"
+        style="position: fixed; bottom: 0; width: 100%; height: 100px;">
+        <strong> <a href="" data-bs-toggle="modal" data-bs-target="#modalPoliticas">
+                <h4>Políticas de privacidad</h4>
+            </a> </strong>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+					<h2 class="tituloEquipoTrabajo text-white b-b-3px-white my-4 text-center text-uppercase">
+                        Únete a nuestro equipo de trabajo
+                    </h2>
+                    <div class="row contenedor-vacantes-principal">
+                        <ul class="mb-0 p-0 contenedor-titulo-vacante text-center">
+                            <li class="list-group-item active tituloVacantes d-flex justify-content-center align-items-center" aria-current="true">
+                                <i class="fa fa-check"></i>
+                                <h3 class="mb-0">Vacantes disponibles</h3>
+                            </li>
+                        </ul>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Abogados
+                                </li>
+                                <li class="list-group-item active-vacante">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Rel. Públicas
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Diseñador gráfico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ing. en sistemas computacionales
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Project manager
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Lic. en derecho 
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    C.P.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Lic. en administración de empresas
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Telemarketing y marketing digital
+                                </li>
+                                <li class="list-group-item">
+                                    -&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Asistente Legal
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Personal administrativo (bilingüe)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Reclutadores
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Asesores comerciales
+                                </li>
+                                <li class="list-group-item">
+                                    -&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="card mt-3">
+						<div class="card-header  tituloCV text-white">
+							<h4 class="card-title  mb-0 p-1">Enviar CV a:</h4>
+						</div>
+						<div class="card-body correosCV">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:info@elynconsultoriainternacional.com">info@elynconsultoriainternacional.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:elynconsultoria@yahoo.com">elynconsultoria@yahoo.com</a>
+                                </li>
+                                <li class="fst-italic">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    O traer documentación a nuestras instalaciones
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="row contenidoFooter justify-content-center justify-content-md-between footer-informacion">
+                <div class="row mx-0 p-5 seccion">
+                    <div class="col-12 col-md-6 overflow-hidden">
+                        <h3 class="text-center text-uppercase mb-0 titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            Sobre <span class="estilo-letra">Elyn Consultoria Internacional</span>:
+                        </h3>
+                        <h4 class="mb-0 text-uppercase mb-4">
+                            <span class="text-white">Dirección:</span>
+                        </h4>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1654610659670!5m2!1ses!2smx"
+                        width="" 
+                        height="" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="text-justify p-4 text-white">
+                            Nicolas Bravo 341, Centro, <br> Cd. Lázaro Cárdenas, Mich, MX.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center">
+                        <h3 class="b-b-titulo-principal text-center mb-4 text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Horarios </span>de atención:
+                        </h3>
+                        <div class="horarios-atencion">
+                            <div class="d-flex align-items-center justify-content-center p-0">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Lu. a Vi. de 07:00 am a 08:00 pm</span>
+                            </div>
+                            <div class="d-flex align-items-center p-0 mb-4 justify-content-center">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Sábados de 07:00 am a 02:00 pm</span>
+                            </div>
+                        </div>
+                        <h3 class="b-b-titulo-principal mb-4 text-center text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Teléfonos:</span>
+                        </h3>
+                        <div class="text-center">
+                            <ul class="p-2 links numeros-telefonicos">
+                                <li>
+                                    <a href="tel:+52 (753) 537 3761">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 3761
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 139 7277">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 139 7277
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 540 5810">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;+52 (753) 540 5810
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row justify-content-between ultimos-tweets mx-0 seccion">
+                    <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal mb-0 mb-5">
+                        <span class="estilo-letra">Últimas</span> Publicaciones:
+                    </h3>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/TramitesMigratoriosInternacionales"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/TramitesMigratoriosInternacionales" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/TramitesMigratoriosInternacionales">Elyn Consultoría Internacional/Migratoria</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/derechomigratorioev"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/derechomigratorioev" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/derechomigratorioev">Derecho Migratorio EV, Abogados</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/creasociedad"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/creasociedad" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/creasociedad">Registro de Negocios y Creación de Sociedades Mexy</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/sociaaboga"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/sociaaboga" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/sociaaboga">EV Despacho Juridico Internacional</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/FIRMALEGALMEXY"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/FIRMALEGALMEXY" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/FIRMALEGALMEXY">Echeverria Asociados, Consultoria Legal</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/mariposasconsular"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/mariposasconsular" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/mariposasconsular">Programas de Reunificacion Familiar</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/estudiovisas"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/estudiovisas" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/estudiovisas">Estudiantes Visados</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/trabajoveterinarios"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/trabajoveterinarios" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/trabajoveterinarios">VISAS TN y H-1B P/Profesionistas</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-5 seccion">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Redes</span> sociales:
+                        </h3>
+                        <nav class="redes-sociales text-center mb-4">
+                            <a 
+                            target="_blanck" 
+                            href="https://www.facebook.com/TramitesMigratoriosInternacionales">
+                                <i
+                                class="fa fa-facebook" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blanck" 
+                            href="https://twitter.com/icamar-constructora">
+                                <i
+                                class="fa fa-twitter" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="#">
+                                <i 
+                                class="fa fa-instagram"
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="https://www.youtube.com/channel/UCl7HIZRNlJPgbO18pK6N_7A">
+                                <i 
+                                class="fa fa-youtube"
+                                aria-hidden="true"></i>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="menu col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Consorcio de</span> empresas:
+                        </h3>
+                        <ul class="links paginasWeb mb-5 text-center">
+                            <li>
+                                Echeverria Asociados<br>
+                                <a target="_blank" href="https://echeverriaasociados.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.echeverriaasociados.com
+                                </a>
+                            </li>
+                            <li>
+                                Registro de negocios USA:<br>
+                                <a target="_blank" href="https://registrodenegociosusa.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.registrodenegociosusa.com
+                                </a>
+                            </li>
+                            <li>
+                                Unión Labor Force:<br>
+                                <a target="_blank" href="https://mexicanlaborforce.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.mexicanlaborforce.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-0 p-5 seccion">
+                    <h3 class="b-b-titulo-principal mb-4 text-uppercase titulo-principal pb-0 mb-3 text-center">
+                        <span class="estilo-letra">Conglomerados de</span> empresas:
+                    </h3>
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <ul class="links paginasWeb">
+                            <li>
+                                Creación de sociedades HLE:<br>
+                                <a target="_blank" href="https://creaciondesociedadeshle.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.creaciondesociedadeshle.com
+                                </a>
+                            </li>
+                            <li>
+                                Income Taxes USAMES:<br>
+                                <a target="_blank" href="https://incometaxesusamex.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.incometaxesusamex.com
+                                </a>
+                            </li>
+                            <li>
+                                Contabilizandote:<br>
+                                <a target="_blank" href="https://contabilizandote.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.contabilizandote.com
+                                </a>
+                            </li>
+                            <li>
+                                Labor MEXY:<br>
+                                <a target="_blank" href="https://labormexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.labormexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Empleos MEXY:<br>
+                                <a target="_blank" href="https://empleosmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.empleosmexy.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center pt-0">
+                        <ul class="links paginasWeb mb-5">
+                            <li>
+                                Global MEXY:<br>
+                                <a target="_blank" href="https://globalmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.globalmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                AS Carretera:<br>
+                                <a target="_blank" href="https://ascarretera.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.ascarretera.com
+                                </a>
+                            </li>
+                            <li>
+                                Visas MEXY:<br>
+                                <a target="_blank" href="https://visasmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.visasmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Unión Migrante:<br>
+                                <a target="_blank" href="https://unionmigrante.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.unionmigrante.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row mx-0 justify-content-center">
+                <p class="copyright fw-bold text-white">
+                    <span class="text-center d-block">©Todos los Derechos Reservados</span>
+                    <span class="text-center d-block">Elyn Consultoria Internacional <span class="anio-actual">2022</span></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <button type="button" class="irAbajo">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</button>
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/bootbox/dist/bootbox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/server/enviarEmail.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <div id="fb-root"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
+    async defer></script>
+    <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
+    nonce="I0coc6CJ"></script>
+    <!-- hacer funcinar la animacion del navbar -->
+    <script>new WOW().init();</script>
+</body>
+</html>

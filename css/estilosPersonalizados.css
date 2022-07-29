@@ -156,10 +156,6 @@ iframe {
     border-bottom: 3px solid var(--color-secundario);
 }
 
-.btnEnviarPrecalificacion {
-    width: 150px;
-    padding: 10px;
-}
 
 /* Validaciones */
 

@@ -47,10 +47,13 @@ window.addEventListener("load", function() {
 
             let frmPreCalificacion = $(".frmPrecalificacion").serialize();
 
+            let urlLocal = "http://local.empleosmexy.com/server/controllers/cEnviarEmail.php";
+            let urlServidor = "https://empleosmexy.com/server/controllers/cEnviarEmail.php";
+
             $.ajax({
 
                 data:frmPreCalificacion+"&tipoPeticion=enviarEmail",
-                url:"http://local.empleosmexy.com/server/preSendEmail.php",
+                url:urlServidor,
                 method:"POST",
                 dataType:"JSON",
                 success:function(data) {
