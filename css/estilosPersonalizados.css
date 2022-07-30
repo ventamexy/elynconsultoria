@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 a {
@@ -43,6 +43,15 @@ footer h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.redireccionMenuPrincipal {
+    white-space: normal!important;
+    margin: 0px!important;
+}
+
+.navbar {
+    padding: 0px!important;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -207,4 +216,8 @@ button.close {
 .title-other {
     color: #000;
     font-weight: bolder!important;
+}
+
+.p-fixed-initial {
+    position: initial!important;
 }

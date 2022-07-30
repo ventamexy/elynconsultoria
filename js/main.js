@@ -44,7 +44,7 @@ $(document).on("scroll", function() {
     }
 
     var scrollY = $(document)[0].scrollingElement;
-    var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
+    var alturaScrollY = scrollY.scrollHeight - scrollY.clientHeight;
     
     if ( alturaScrollY == scrollYPosicionActual ) {
         $(".irAbajo i").addClass("transform-r-180");
@@ -53,18 +53,20 @@ $(document).on("scroll", function() {
         $(".irAbajo i").removeClass("transform-r-180");
         $(".irArriba").removeClass("irArriba").addClass("irAbajo");
     }
+
+    console.log(scrollYPosicionActual, alturaScrollY);
         
 });
 
 
-// $(document).on("click", ".irAbajo", function(){
-//     let scrollY = $(document)[0].scrollingElement;
-//     let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
-//     window.scroll({
-//         top: alturaScrollY,
-//         behavior: 'smooth'
-//     });
-// });
+$(document).on("click", ".irAbajo", function(){
+    let scrollY = $(document)[0].scrollingElement;
+    let alturaScrollY = scrollY.scrollHeight - scrollY.clientHeight;
+    window.scroll({
+        top: alturaScrollY,
+        behavior: 'smooth'
+    });
+});
 
 $(document).on("click", ".irArriba", function(){
     window.scroll({
