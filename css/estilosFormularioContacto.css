@@ -1,3 +1,7 @@
+.titulo-contacto {
+    font-size: 60px!important;
+}
+
 label {
     font-weight: bold;
     font-style: italic;
@@ -7,10 +11,15 @@ label {
     width: 150px;
     padding: 10px;
     background-color: var(--color-principal)!important;
+    border-color: var(--color-principal)!important;
 }
 
 .btnEnviarPrecalificacion:not([disabled]):not(.disabled):active {
     background-color: var(--color-principal)!important;
+}
+
+.btnEnviarPrecalificacion:focus {
+    box-shadow: 0 0 0 .25rem var(--color-principal)!important;
 }
 
 /* Validaciones */
@@ -42,6 +51,20 @@ label {
 
 .bootbox-body {
     padding: 1rem!important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.bootbox.modal .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bootbox-accept {
+    margin-top: 15px;
 }
 
 button.close {
@@ -61,6 +84,13 @@ button.close {
     opacity: .5;
 }
 
-.bootbox-body {
-    text-align: center;
+.icono-notificacion {
+    width: 80px;
+    height: 80px;
+}
+
+.contenedor-img-notificacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

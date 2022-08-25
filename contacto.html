@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/estilosFormularioContacto.css">
     <link rel="stylesheet" href="css/spinnerCarga.css">
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <!-- Scroll -->
@@ -161,63 +161,65 @@
             <div class="container contenedor-title-seccion my-5 text-center">
                 <h1>FORMULARIO DE CONTACTO</h1>
             </div>
-            <form class="frmPrecalificacion">
-                <div class="container">
-                    <div class="row">
-                        <div class="form-group col-12 col-md-6 col-lg-3">
-                            <label for="nombre">Nombre:</label>
-                            <input 
-                            type="text" 
-                            class="form-control"
-                            name="nombre">
-                            <span class="campoObligatorio">Campo obligatorio</span>
+            <div class="col-12 col-lg-8 mx-auto">
+                <form class="frmPrecalificacion">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Nombre:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="nombre">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Apellido paterno:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="apellidoPaterno">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Apellido materno:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="apellidoMaterno">
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Email:</label>
+                                <input 
+                                type="email" 
+                                class="form-control"
+                                name="email">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
                         </div>
-                        <div class="form-group col-12 col-md-6 col-lg-3">
-                            <label for="nombre">Apellido paterno:</label>
-                            <input 
-                            type="text" 
-                            class="form-control"
-                            name="apellidoPaterno">
-                            <span class="campoObligatorio">Campo obligatorio</span>
-                        </div>
-                        <div class="form-group col-12 col-md-6 col-lg-3">
-                            <label for="nombre">Apellido materno:</label>
-                            <input 
-                            type="text" 
-                            class="form-control"
-                            name="apellidoMaterno">
-                        </div>
-                        <div class="form-group col-12 col-md-6 col-lg-3">
-                            <label for="nombre">Email:</label>
-                            <input 
-                            type="email" 
-                            class="form-control"
-                            name="email">
-                            <span class="campoObligatorio">Campo obligatorio</span>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="nombre">Mensaje:</label>
+                                <textarea 
+                                class="form-control"
+                                rows="8"
+                                name="mensaje"></textarea>
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <button 
+                                class="btn btn-success btnEnviarPrecalificacion" 
+                                type="button">
+                                    Enviar solicitud
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="form-group col-12">
-                            <label for="nombre">Mensaje:</label>
-                            <textarea 
-                            class="form-control"
-                            rows="8"
-                            name="mensaje"></textarea>
-                            <span class="campoObligatorio">Campo obligatorio</span>
-                        </div>
-                        <div class="row justify-content-center my-3">
-                            <button 
-                            class="btn btn-success btnEnviarPrecalificacion" 
-                            type="button">
-                                Enviar solicitud
-                            </button>
-                        </div>
+                </form>
+                <div class="cargaSpinner d-none">
+                    <div class="circleA">
+                        <div class="circleB"></div>
                     </div>
-                </div>
-            </form>
-            <div class="cargaSpinner d-none">
-                <div class="circleA">
-                    <div class="circleB"></div>
                 </div>
             </div>
         </div>

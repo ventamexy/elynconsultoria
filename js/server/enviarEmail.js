@@ -4,6 +4,9 @@ window.addEventListener("load", function() {
 
         $(".cargaSpinner").removeClass("d-none");
         $(".btnEnviarPrecalificacion").attr({disabled:true});
+        let imgNotificacion = "images/iconos-notificaciones/success.png";
+        let typeButton = "btn btn-danger";
+        let estadoEnvio = false;
 
         try {
             
@@ -47,8 +50,10 @@ window.addEventListener("load", function() {
 
             let frmPreCalificacion = $(".frmPrecalificacion").serialize();
 
-            let urlLocal = "http://local.empleosmexy.com/server/controllers/cEnviarEmail.php";
             let urlServidor = "https://empleosmexy.com/server/controllers/cEnviarEmail.php";
+            if ( window.location.host === "localhost:3000" ) {
+                urlServidor = "http://local.empleosmexy.com/server/controllers/cEnviarEmail.php";
+            }
 
             $.ajax({
 
@@ -60,17 +65,19 @@ window.addEventListener("load", function() {
                     
                     try {
                         
-                        var typeBtn = "btn btn-danger";
-
-                        if ( data["validaciones"] || !data["estadoEnvioCorreo"] ) {
-                            throw data["mensaje"];
+                        if ( data["validaciones"] ) {
+                            imgNotificacion = "images/iconos-notificaciones/warning.png";
                         }
 
                         if ( data["estadoEnvioCorreo"] == true ) {
-                            typeBtn = "btn btn-success";
+                            typeButton = "btn btn-success";
                             $("input, textarea").val("");
-                            throw data["mensaje"];
+                            estadoEnvio = true;
+                        } else {
+                            imgNotificacion = "images/iconos-notificaciones/error.png";
                         }
+
+                        throw data["mensaje"];
 
                     } catch (error) {
                         
@@ -79,9 +86,12 @@ window.addEventListener("load", function() {
                             className: 'd-flex align-items-center'
                         });
                         
-                        $(".bootbox-accept").addClass(typeBtn);
+                        $(".bootbox-accept").addClass(typeButton);
                         $(".btnEnviarPrecalificacion").attr({disabled:false});
                         $(".cargaSpinner").addClass("d-none");
+
+                        addImageNotificacion(imgNotificacion, estadoEnvio);
+
                     }
 
                 }
@@ -90,17 +100,35 @@ window.addEventListener("load", function() {
 
         } catch (error) {
 
+            imgNotificacion = "images/iconos-notificaciones/warning.png";
+
             bootbox.alert({
                 message: error,
                 className: 'd-flex align-items-center'
             });
 
-            $(".bootbox-accept").addClass("btn btn-danger");
+            $(".bootbox-accept").addClass("btn "+typeButton);
             $(".btnEnviarPrecalificacion").attr({disabled:false});
             $(".cargaSpinner").addClass("d-none");
+
+            addImageNotificacion(imgNotificacion, estadoEnvio);
 
         }
 
     });
+
+    function addImageNotificacion( imgNotificacion = "", estadoEnvio) {
+
+        let contenedorImagenNotificacion = $("<div>").attr({class:"contenedor-img-notificacion"});
+        let imagenNotificacion = $("<img>").attr({class:"icono-notificacion", src:imgNotificacion});
+        contenedorImagenNotificacion.append(imagenNotificacion);
+        let botonCierre = ".bootbox-accept.btn-danger";
+        if ( estadoEnvio ) {
+            botonCierre = ".bootbox-accept.btn-success";
+        }
+
+        contenedorImagenNotificacion.insertBefore(botonCierre);
+
+    }
 
 });
