@@ -26,9 +26,11 @@
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="css/estilosFormularioContacto.css">
     <link rel="stylesheet" href="css/spinnerCarga.css">
+    <link rel="stylesheet" href="css/estilosReCaptcha.css" />
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <!-- Scroll -->
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!--Navbar-->
@@ -206,6 +208,15 @@
                                 name="mensaje"></textarea>
                                 <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
+                            <div class="row d-flex align-items-center position-relative">
+                                <div class="g-recaptcha" data-sitekey="6LfQhggiAAAAACBfSE_PeQCmFZhSNvgD8ddm7kJi"></div>
+                                <div class="col-1 position-absolute contenedor-boton">
+                                    <button class="reload-captcha" type="button">
+                                        <i class="fa fa-refresh"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
                             <div class="row justify-content-center my-3">
                                 <button 
                                 class="btn btn-success btnEnviarPrecalificacion" 
@@ -692,6 +703,7 @@
     <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="assets/bootbox/dist/bootbox.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/funcionesGenerales.js"></script>
     <script type="text/javascript" src="js/server/enviarEmail.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
