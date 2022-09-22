@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../css/root.css">
     <link rel="stylesheet" href="../../css/otrosEstilos.css">
     <link rel="stylesheet" href="../../css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="../../css/estilosFormularioContacto.css">
     <!-- OLD -->
     <!-- Material Design Bootstrap -->
     <link href="../../css/mdb.min.css" rel="stylesheet">
@@ -154,33 +155,7 @@
     </div>
     <main class="container-fluid p-0">
         <div class="row">
-            <div class="col-12 col-md-4 p-0">
-                <!-- inicio de aside bloque izquierdo-->
-                <aside class="botonera">
-                    <nav>
-                        <div class="nav-wrapper">
-                            <ul id="nav-mobile" class="right hide-on-med-and-down sidemenu">
-                                <a data-scroll href="visasdeturistas.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside" >País</button>
-                                </a>
-                                <a data-scroll href="2viajeconsular.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Viaje consular</button>
-                                </a>
-                                <a data-scroll href="3cita.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Cita</button>
-                                </a>
-                                <a data-scroll href="4visadoenlinea.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Visado en línea</button>
-                                </a>
-                                <a data-scroll href="5renovaciones.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Renovaciones</button>
-                                </a>
-                            </ul>
-                        </div>
-                    </nav>
-                </aside>
-            </div>
-            <div class="col-12 col-md-8 p-0">
+            <div class="col-12 botonera p-0">
                 <div class="row">
                     <iframe 
                     width="100%" 
@@ -190,65 +165,81 @@
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
                 </div>
-                <form class="enviar_tramites_migratorios p-3">
-                    <h4 class="ui dividing header">Formulario de país</h4>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
+                <div class="container border-top-form">
+                    <form class="enviar_tramites_migratorios p-5">
+                        <h1 class="ui dividing header p-2 text-center">Formulario de país</h1>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3 form-group">
                                 <label for="nombre">Nombre:</label>
                                 <input 
                                 class="form-control"
                                 type="text" 
-                                name="nombre" required>
+                                name="nombre">
+                                <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label for="apellidos">Apellidos:</label>
+                            <div class="col-12 col-md-6 mb-3 form-group">
+                                <label for="apellidoPaterno">Apellido paterno:</label>
                                 <input 
                                 class="form-control"
                                 type="text" 
-                                name="apellidos" 
-                                required>
+                                name="apellidoPaterno">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 form-group">
+                                <label for="apellidoMaterno">Apellido materno:</label>
+                                <input 
+                                class="form-control"
+                                type="text" 
+                                name="apellidoMaterno">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 form-group">
+                                <label for="email">Email:</label>
+                                <input 
+                                class="form-control"
+                                type="email" 
+                                name="email">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 form-group">
+                                <label for="telCelular">Teléfono:</label>
+                                <input 
+                                class="form-control"
+                                type="text" 
+                                name="telCelular">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 form-group">
+                                <label for="tipoTramite">Tipo de trámite:</label>
+                                <select class="form-select" name="tipoTramite" id="tipoTramite">
+                                    <option value="0">--Seleccione--</option>
+                                    <option value="P">País</option>
+                                    <option value="VC">Viaje consular</option>
+                                    <option value="C">Cita</option>
+                                    <option value="VL">Visado en línea</option>
+                                    <option value="R">Renovaciones</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3 form-group">
+                                <label for="mensaje">Solicitud (Caso):</label>
+                                <textarea
+                                name="mensaje" 
+                                class="form-control"
+                                rows="8"></textarea>
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="row my-3">
+                                <div class="d-flex justify-content-center">
+                                    <button 
+                                    class="ui button btn btn-indigo" 
+                                    type="button"
+                                    id="btn-enviar">Enviar
+                                        <li class=" fa fa-paper-plane pr-2"></li>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 form-group">
-                            <label for="email">Email:</label>
-                            <input 
-                            class="form-control"
-                            type="email" 
-                            name="email" 
-                            required>
-                        </div>
-                        <div class="col-md-6 col-sm-12 form-group">
-                            <label for="numero">Teléfono:</label>
-                            <input 
-                            class="form-control"
-                            type="number" 
-                            name="numero" 
-                            required>
-                        </div>
-                    </div>
-                    <div class="col-12 form-group">
-                        <label for="mensaje">Solicitud (Caso)</label>
-                        <textarea
-                        name="mensaje" 
-                        class="form-control" 
-                        required></textarea>
-                    </div>
-                    <div class="row my-3">
-                        <div class="d-flex justify-content-center">
-                            <button 
-                            class="ui button btn btn-indigo" 
-                            type="button"
-                            id="btn-enviar">Enviar
-                                <li class=" fa fa-paper-plane pr-2"></li>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -717,13 +708,5 @@
     <!-- llamar framwork semantic-->
     <script type="text/javascript" src="../../js/semantic.min.js"></script>
     <script type="text/javascript" src="../../js/abrir.js"></script>
-    <script type="text/javascript">
-        var vid = document.getElementById("myVideo");
-        vid.volume = 0.2;
-    </script>
-    <!-- hacer funcinar la animacion del navbar -->
-    <script>
-        new WOW().init();
-    </script>
 </body>
 </html>
