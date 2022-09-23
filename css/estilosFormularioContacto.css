@@ -94,3 +94,26 @@ button.close {
     justify-content: center;
     width: 100%;
 }
+
+
+/* Trámites */
+.botonera, .border-top-form {
+    border-top: 17px solid #007300;
+}
+
+.enviar_tramites_migratorios label {
+    color:#fff;
+    font-size: 16px;
+}
+
+.enviar_tramites_migratorios > h1 {
+    color: #fff!important;
+    border: 3px solid #007300!important;
+    border-radius: 50px;
+}
+
+.btn-indigo {
+    background-color: #007300!important;
+    width: 150px;
+    height: 50px;
+}

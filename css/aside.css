@@ -84,7 +84,6 @@ termina en la linea 86*/
     flex-shrink: 0 !important;
     background: rgb(39, 39, 39);
     height: 100% !important;
-    z-index: -1000;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
