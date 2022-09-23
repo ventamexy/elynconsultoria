@@ -101,13 +101,13 @@ button.close {
     border-top: 17px solid #007300;
 }
 
-.enviar_tramites_migratorios label {
-    color:#fff;
+.frmTramites label {
+    color:#fff!important;
     font-size: 16px;
 }
 
-.enviar_tramites_migratorios > h1 {
-    color: #fff!important;
+.frmTramites > h1 {
+    color: #fff;
     border: 3px solid #007300!important;
     border-radius: 50px;
 }
@@ -116,4 +116,10 @@ button.close {
     background-color: #007300!important;
     width: 150px;
     height: 50px;
+}
+
+.contenedor-reg-empleados {
+    background-color: #000;
+    padding: 15px;
+    font-style: italic;
 }

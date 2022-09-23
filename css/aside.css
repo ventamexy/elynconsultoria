@@ -88,7 +88,6 @@ termina en la linea 86*/
     -o-transition: .3s all ease;
     transition: .3s all ease;
     line-height: 1.5;
-    overflow-y: scroll;
 }
 aside::-webkit-scrollbar {
     width: 2px;
