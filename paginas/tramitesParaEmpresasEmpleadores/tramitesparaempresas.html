@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../css/root.css">
     <link rel="stylesheet" href="../../css/otrosEstilos.css">
     <link rel="stylesheet" href="../../css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="../../css/estilosFormularioContacto.css">
     <!-- OLD -->
     <!-- Material Design Bootstrap -->
     <link href="../../css/mdb.min.css" rel="stylesheet">
@@ -152,48 +153,7 @@
     </div>
     <main class="container-fluid p-0">
         <div class="row">
-            <div class="col-12 col-md-4 p-0">
-                <!-- inicio de aside bloque izquierdo-->
-                <aside class="botonera">
-                    <nav>
-                        <div class="nav-wrapper">
-                            <ul id="nav-mobile" class="right hide-on-med-and-down sidemenu">
-                                <a data-scroll href="tramitesparaempresas.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Recruitment of personnel</button>
-                                </a>
-                                <a data-scroll href="3representacion.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consular representation</button>
-                                </a>
-                                <a data-scroll href="4citaconsular.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Consulate appointment</button>
-                                </a>
-                                <a data-scroll href="5visadoenlinea.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Online visa</button>
-                                </a>
-                                <a data-scroll href="6certificacion.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Labor certification</button>
-                                </a>
-                                <a data-scroll href="7viajes.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Travel to the consulate</button>
-                                </a>
-                                <a data-scroll href="8pais.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Country</button>
-                                </a>
-                                <a data-scroll href="9clasificacion.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Classification of visas</button>
-                                </a>
-                                <a data-scroll href="10perfil.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Management profile</button>
-                                </a>
-                                <a data-scroll href="11renovaciones.html">
-                                    <button type="button" class="btn btn-outline-info waves-effect" id="btnaside">Renewal contrato</button>
-                                </a>
-                            </ul>
-                        </div>
-                    </nav>
-                </aside>
-            </div>
-            <div class="col-12 col-md-8 p-0">
+            <div class="col-12 botonera p-0">
                 <div class="row">
                     <iframe 
                     width="100%" 
@@ -203,275 +163,305 @@
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
                 </div>
-                <form action="../../php/enviar_para_empresas/enviar.php" class="ui form p-5" id="frm-prueba" method="post">
-                    <h4 class="ui dividing header">Form to recruitment of personnel</h4>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>First name: </label>
-                                <input class="form-control" type="text" name="nombre" required>
+                <div class="container border-top-form">
+                    <form class="ui form p-5 frmTramites" method="post">
+                        <h1 class="ui dividing header p-2 text-center text-white">Formulario de contratación de personal</h1>
+                        <div class="row">
+                            <div class="form-group col-12 col-md-6">
+                                <label>Nombre: </label>
+                                <input class="form-control" type="text" name="nombre">
+                                <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Last name: </label>
-                                <input class="form-control" type="text" name="apellidos" required>
+                            <div class="form-group col-12 col-md-6">
+                                <label>Apellido paterno: </label>
+                                <input class="form-control" type="text" name="apellidoPaterno">
+                                <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group col-12 col-md-6">
+                                <label>Apellido materno: </label>
+                                <input class="form-control" type="text" name="apellidoMaterno">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
                                 <label>Email: </label>
-                                <input class="form-control" type="email" name="email" required>
+                                <input class="form-control" type="email" name="email">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label>Teléfono: </label>
+                                <input class="form-control" type="text" name="numero">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label>Nombre de la compañia: </label>
+                                <input class="form-control" type="text" name="nombreEmpresa">
+                                <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Phone: </label>
-                                <input class="form-control" type="text" name="numero" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Company name: </label>
-                        <input class="form-control" type="text" name="empresa" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Subject: </label>
-                        <select name="subject" id="" class="form-select">
-                            <option value="Comercio internacional e integracion">International trade and integration</option>
-                            <option value="Desarrollo económico">Economic development</option>
-                            <option value="Desarrollo producto y empresarial">Product and business development</option>
-                            <option value="Asuntos de género">Gender issues</option>
-                            <option value="Desarrollo social">Social development</option>
-                            <option value="Población y desarrollo">Population and development</option>
-                            <option value="Desarrollo sostenible y asentamientos humanos">Sustainable development and human settlements</option>
-                            <option value="Recursos naturales e infraestructura">Natural resources and infrastructure</option>
-                            <option value="Estadistícas">Statistics</option>
-                            <option value="Planificación para el desarrollo">Planning and development</option>
-                            <option value="construcción y desarrollo urbano">Construction and urban development</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Message:</label>
-                        <textarea name="mensaje" class="form-control" required></textarea>
-                    </div>
-                    <p class="separador">If you´re able to, please give us a better idea of your needs. (Optional). HAVE YOUR EVER USED THE H-2BE
-                        PROGRAM BEFORE</p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="form-group">
-                                <label>aproximate number of worker requested?</label>
-                                <select name="trabajadores" id="" class="form-select">
-                                    <option value="1-5">1-5</option>
-                                    <option value="6-10">6-10</option>
-                                    <option value="10-20">10-20</option>
-                                    <option value="20-30">20-30</option>
-                                    <option value="30-40">30-40</option>
-                                    <option value="40-50">40-50</option>
-                                    <option value="50-more">50-more</option>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label>Giro de la empresa: </label>
+                                <select name="giroEmpresa" id="" class="form-select">
+                                    <option value="0">--Seleccione--</option>
+                                    <option value="1">Comercio internacional e integración</option>
+                                    <option value="2">Desarrollo economico</option>
+                                    <option value="3">Desarrollo de productos y negocios</option>
+                                    <option value="4">Cuestiones de género</option>
+                                    <option value="5">Desarrollo social</option>
+                                    <option value="6">Población y desarrollo</option>
+                                    <option value="7">Desarrollo sostenible y asentamientos humanos</option>
+                                    <option value="8">Recursos naturales e infraestructura</option>
+                                    <option value="9">Estadísticas</option>
+                                    <option value="10">Planificación y desarrollo</option>
+                                    <option value="11">Construcción y desarrollo urbano</option>
                                 </select>
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label>Mensaje:</label>
+                                <textarea name="mensaje" class="form-control" rows="8"></textarea>
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="Asunto/Caso a solicitar:">Asunto/Caso a solicitar:</label>
+                                <select class="form-select" name="documentoAsuntoSolicitado" id="documentoAsuntoSolicitado">
+                                    <option value="0">--Seleccione--</option>
+                                    <option value="1">Reclutamiento de personal</option>
+                                    <option value="2">Representación consular</option>
+                                    <option value="3">Cita en el consulado</option>
+                                    <option value="4">Visa en línea</option>
+                                    <option value="5">Certificación laboral</option>
+                                    <option value="6">Viajar al consulado</option>
+                                    <option value="7">País</option>
+                                    <option value="8">Clasificación de visas</option>
+                                    <option value="9">Perfil de gestión</option>
+                                    <option value="10">Contrato de renovación</option>
+                                </select>
+                                <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="form-group">
-                                <label>Business type? (example: landscape or construction): </label>
-                                <input class="form-control" type="text" name="tiponegocio">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Is the business seasonal or peakload?: </label>
-                                <input class="form-control" type="text" name="negocio">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Job description? Last the duties required of workers: </label>
-                                <input class="form-control" type="text" name="tipotrabajo">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Salary or wages offered?: </label>
-                                <input class="form-control" type="text" name="salario" placeholder="$">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label>Estimated cost of rent and utilities for workers? </label>
-                                <input class="form-control" type="text" name="utilidades" placeholder="$">
-                            </div>
-                        </div>
+                        <hr>
                         <div class="row">
-                            <label class="col-md-12">Approximate length of employment from: </label>
-                            <div class="col-md-3 col-sm-3">
+                            <h3 class="mb-0">
+                                <p class="separador text-white">
+                                    Si puede, por favor denos una mejor idea de sus necesidades. (Opcional). ¿HA UTILIZADO ALGUNA VEZ EL PROGRAMA H-2BE ANTES?
+                                </p>
+                            </h3>
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="form-group">
-                                    <select name="diafechainicio" id="" class="form-select">
-                                        <option value="">Day</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
+                                    <label>¿Número aproximado de trabajadores solicitados?</label>
+                                    <select name="numeroTrabajadores" id="" class="form-select">
+                                        <option value="0">--Seleccione--</option>
+                                        <option value="1-5">1-5</option>
+                                        <option value="6-10">6-10</option>
+                                        <option value="10-20">10-20</option>
+                                        <option value="20-30">20-30</option>
+                                        <option value="30-40">30-40</option>
+                                        <option value="40-50">40-50</option>
+                                        <option value="50-more">50-more</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="form-group">
-                                    <select name="mesfechainicio" id="" class="form-select">
-                                        <option value="">Month</option>
-                                        <option value="January">January</option>
-                                        <option value="February">February</option>
-                                        <option value="March">March</option>
-                                        <option value="April">April</option>
-                                        <option value="May">May</option>
-                                        <option value="June">June</option>
-                                        <option value="July">July</option>
-                                        <option value="August">August</option>
-                                        <option value="September">September</option>
-                                        <option value="October">October</option>
-                                        <option value="November">November</option>
-                                        <option value="December">December</option>
-                                    </select>
+                                    <label>¿Tipo de negocio? (ejemplo: paisaje o construcción):</label>
+                                    <input class="form-control" type="text" name="tipoNegocio">
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="form-group">
-                                    <select name="añofechainicio" id="" class="form-select">
-                                        <option value="">Year</option>
-                                        <option value="2018">2018</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2025">2025</option>
-                                        <option value="2026">2026</option>
-                                        <option value="2027">2027</option>
-                                        <option value="2028">2028</option>
-                                        <option value="2029">2029</option>
-                                        <option value="2030">2030</option>
-                                    </select>
+                                    <label>¿El negocio es estacional o de carga máxima?:</label>
+                                    <br>
+                                    <input class="form-control" type="text" name="negocioEstacionalCarga">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>¿Descripción del trabajo? Deberes de los trabajadores:</label>
+                                    <textarea class="form-control" name="descripcionTrabajo" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label>¿Salario o salario ofrecido?:</label>
+                                    <input class="form-control" type="text" name="salarioOfrecido" placeholder="$">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label>¿Costo estimado de alquiler y servicios públicos para los trabajadores?</label>
+                                    <input class="form-control" type="text" name="alquilerServiciosCostos" placeholder="$">
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <label class="col-md-12">Duración aproximada del empleo:</label>
+                                <span class="text-white">De:</span>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="dia">Día:</label>
+                                        <select name="diaFechaInicio" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="mes">Mes:</label>
+                                        <select name="mesFechaInicio" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="Enero">Enero</option>
+                                            <option value="Febrero">Febrero</option>
+                                            <option value="Marzo">Marzo</option>
+                                            <option value="Abril">Abril</option>
+                                            <option value="Mayo">Mayo</option>
+                                            <option value="Junio">Junio</option>
+                                            <option value="Julio">Julio</option>
+                                            <option value="Agosto">Agosto</option>
+                                            <option value="Septiembre">Septiembre</option>
+                                            <option value="Octubre">Octubre</option>
+                                            <option value="Noviembre">Noviembre</option>
+                                            <option value="Diciembre">Diciembre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="mes">Año:</label>
+                                        <select name="anioFechaInicio" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="text-white">A:</span>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Día:</label>
+                                        <select name="diaFechaFin" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Mes:</label>
+                                        <select name="mesFechaFin" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="Enero">Enero</option>
+                                            <option value="Febrero">Febrero</option>
+                                            <option value="Marzo">Marzo</option>
+                                            <option value="Abril">Abril</option>
+                                            <option value="Mayo">Mayo</option>
+                                            <option value="Junio">Junio</option>
+                                            <option value="Julio">Julio</option>
+                                            <option value="Agosto">Agosto</option>
+                                            <option value="Septiembre">Septiembre</option>
+                                            <option value="Octubre">Octubre</option>
+                                            <option value="Noviembre">Noviembre</option>
+                                            <option value="Diciembre">Diciembre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Año:</label>
+                                        <select name="añoFechaFin" id="" class="form-select">
+                                            <option value="0">--Seleccione--</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <label class="col-md-12">to: </label>
-                            <div class="col-md-4 col-sm-3">
-                                <div class="form-group">
-                                    <select name="diafechafin" id="" class="form-select">
-                                        <option value="">Day</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-3">
-                                <div class="form-group">
-                                    <select name="mesfechafin" id="" class="form-select">
-                                        <option value="">Month</option>
-                                        <option value="January">January</option>
-                                        <option value="February">February</option>
-                                        <option value="March">March</option>
-                                        <option value="April">April</option>
-                                        <option value="May">May</option>
-                                        <option value="June">June</option>
-                                        <option value="July">July</option>
-                                        <option value="August">August</option>
-                                        <option value="September">September</option>
-                                        <option value="October">October</option>
-                                        <option value="November">November</option>
-                                        <option value="December">December</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-3">
-                                <div class="form-group">
-                                    <select name="añofechafin" id="" class="form-select">
-                                        <option value="">Year</option>
-                                        <option value="2018">2018</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2025">2025</option>
-                                        <option value="2026">2026</option>
-                                        <option value="2027">2027</option>
-                                        <option value="2028">2028</option>
-                                        <option value="2029">2029</option>
-                                        <option value="2030">2030</option>
-                                    </select>
-                                </div>
+                        <div class="ui error message"></div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="form-group">
+                                <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
+                                    <li class=" fa fa-paper-plane pr-2"></li>
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="ui error message"></div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="form-group mx-2">
-                            <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
-                                <li class=" fa fa-paper-plane pr-2"></li>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

@@ -29,6 +29,14 @@ li {
     text-align: justify !important;
 }
 
+.text-black {
+    color: #000!important;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
 .hr-footer {
     width: 25%;
     margin: 8px auto;
