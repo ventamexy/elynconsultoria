@@ -29,129 +29,124 @@
     <link rel="stylesheet" href="../../css/lightbox.min.css">
 </head>
 <body>
-    <main class="container-fluid"> 
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar p-0">
+        <a class="navbar-brand p-3 redireccionMenuPrincipal" href="index.html">
+            <center><img src="/img/newimages/elynlogo5e.png" height="70%" width="70%"></center>
+        </a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent-7"
+        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="navbar-nav mr-auto">
+                <!-- inicio del menu -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="letramenu">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a 
+                    href="../VisasTuristas/tramitesVisas.html"
+                    class="nav-link">Trámite de visas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                    class="nav-link dropdown-toggle" 
+                    id="navbarDropdownMenuLink" 
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true" 
+                    aria-expanded="false">Trámites migratorios</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                            href="../tramitesMigratorios/tramitesMigratorios.html">Trámites migratorios</a>
+                        <a class="dropdown-item"
+                            href="../tramitesParaMexico/tramitesparamexico.html">Trámites para México</a>
+                        <a class="dropdown-item" href="../tramitesConsulares/tramitesconsulares.html">
+                            Trámites consulares
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                        href="../tramitesMigratoriosComoTrabajadores/tramitesmigratorioscomotrabajadores.html">Trámites
+                        migratorios como trabajadores</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                            href="../tramitesParaEmpresasEmpleadores/tramitesparaempresas.html">Trámites
+                            para empresas y empleadores</a>
+                        <a class="dropdown-item"
+                            href="../registro_empleados/registrodeempleados.html">Registro de empleados en
+                            el extranjero</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="../registroEmpresas/registrodeempresas.html">Registro de empresas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a 
+                    class="nav-link dropdown-toggle" 
+                    id="navbarPaginasWeb" 
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true" 
+                    aria-expanded="false">Sitios web relacionados</a>
+                    <div class="dropdown-menu dropdown-primary sitiosWebRelacionados" aria-labelledby="navbarPaginasWeb">
+                        <a 
+                        class="dropdown-item"
+                        href="https://echeverriaasociados.com"
+                        target="_blank">
+                            <i class="fa fa-globe"></i>
+                            Echeverria asociados
+                        </a>
+                        <a class="dropdown-item"
+                        href="https://globalmexy.com"
+                        target="_blank">
+                            <i class="fa fa-globe"></i>
+                            Global Mexy
+                        </a>
+                        <a class="dropdown-item"
+                        href="https://visasmexy.com"
+                        target="_blank">
+                            <i class="fa fa-globe"></i>
+                            Visas Mexy
+                        </a>
+                        <a class="dropdown-item"
+                        href="https://unionmigrante.com"
+                        target="_blank">
+                            <i class="fa fa-globe"></i>
+                            Unión Migrante
+                        </a>
+                        <a class="dropdown-item"
+                        href="https://labormexy.com"
+                        target="_blank">
+                            <i class="fa fa-globe"></i>
+                            Labor Mexy
+                        </a> 
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html" id="letramenu">Galería de Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tramitesRealizados.html" id="letramenu">Trámites Realizados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeriaImagenes.html" id="letramenu">Galería de Imágenes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html" id="letramenu">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-fluid botonera">
         <div class="row justify-content-center">
-            <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar p-0">
-                <a class="navbar-brand p-3 redireccionMenuPrincipal" href="../../index.html">
-                    <center><img src="/img/newimages/elynlogo5e.png" height="70%" width="70%"></center>
-                    <span class="sr-only">(current)</span>
-                </a>
-                <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent-7"
-                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                    <ul class="navbar-nav mr-auto">
-                        <!-- inicio del menu -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../index.html" id="letramenu">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Trámite de visas</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a 
-                                class="dropdown-item" 
-                                href="visasdeturistas.html">
-                                    Visas de turistas
-                                </a>
-                                <a 
-                                class="dropdown-item" 
-                                href="../VisasTrabajo/visasdetrabajo.html">
-                                    Visas de trabajo
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Trámites migratorios</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item"
-                                    href="../tramitesMigratorios/tramitesmigratorios.html">Trámites migratorios</a>
-                                <a class="dropdown-item"
-                                    href="../tramitesParaMexico/tramitesparamexico.html">Trámites para México</a>
-                                <a class="dropdown-item" href="../tramitesConsulares/tramitesconsulares.html">
-                                    Trámites consulares
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item"
-                                    href="../tramitesMigratoriosComoTrabajadores/tramitesmigratorioscomotrabajadores.html">Trámites
-                                    migratorios como trabajadores</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Trámites para empresas</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item"
-                                    href="../tramitesParaEmpresasEmpleadores/tramitesparaempresas.html">Trámites
-                                    para empresas y empleadores</a>
-                                <a class="dropdown-item"
-                                    href="../registro_empleados/registrodeempleados.html">Registro de empleados en
-                                    el extranjero</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item"
-                                    href="../registroEmpresas/registrodeempresas.html">Registro de empresas</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a 
-                            class="nav-link dropdown-toggle" 
-                            id="navbarPaginasWeb" 
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true" 
-                            aria-expanded="false">Sitios web relacionados</a>
-                            <div class="dropdown-menu dropdown-primary sitiosWebRelacionados" aria-labelledby="navbarPaginasWeb">
-                                <a 
-                                class="dropdown-item"
-                                href="https://echeverriaasociados.com"
-                                target="_blank">
-                                    <i class="fa fa-globe"></i>
-                                    Echeverria asociados
-                                </a>
-                                <a class="dropdown-item"
-                                href="https://globalmexy.com"
-                                target="_blank">
-                                    <i class="fa fa-globe"></i>
-                                    Global Mexy
-                                </a>
-                                <a class="dropdown-item"
-                                href="https://visasmexy.com"
-                                target="_blank">
-                                    <i class="fa fa-globe"></i>
-                                    Visas Mexy
-                                </a>
-                                <a class="dropdown-item"
-                                href="https://unionmigrante.com"
-                                target="_blank">
-                                    <i class="fa fa-globe"></i>
-                                    Unión Migrante
-                                </a>
-                                <a class="dropdown-item"
-                                href="https://labormexy.com"
-                                target="_blank">
-                                    <i class="fa fa-globe"></i>
-                                    Labor Mexy
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../videos.html" id="letramenu">Galería de Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../tramitesRealizados.html" id="letramenu">Trámites realizados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../galeriaImagenes.html" id="letramenu">Galería de imágenes</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
             <!-- banner cover inicio-->
             <div class="viewregistroempleados">
                 <!-- Mask & flexbox options-->
@@ -159,7 +154,7 @@
                     <!-- Content -->
                     <div class="container">
                         <!--Grid row-->
-                        <div class="row">
+                        <div class="row mt-5">
                             <!--Grid column-->
                             <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
                                 <h1 class="h1-responsive font-weight-bold mt-sm-5 contenedor-reg-empleados">Registro de empleados en el extranjero</h1>
@@ -188,176 +183,136 @@
                 <!-- Mask & flexbox options-->
             </div>
         </div>
-        <div class="row">
-            <!--inicio de mi cuerpo principal con los formularios-->
-            <section class="container">
-                <div class="ui border-top-form">
-                    <form class="ui form frmTramites" method="post">
-                        <h1 class="ui dividing header p-2 text-center text-black">Registro de empleados en el extrangero</h1>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Nombre:</label>
-                                    <input type="text" name="nombre">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Apellidos paterno:</label>
-                                    <input type="text" name="apellidoPaterno">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Apellido materno:</label>
-                                    <input type="text" name="apellidoMaterno">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Email:</label>
-                                    <input type="email" name="email">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Teléfono:</label>
-                                    <input type="number" name="numero">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>País o visas:</label>
-                                    <input type="text" name="paisovisas">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Oficio/Ocupación/Profesión:</label>
-                                    <input type="text" name="oficio">
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Primera vez:</label>
-                                    <select name="primeravez" id="" class="ui fluid dropdown">
-                                        <option value="Si">Sí</option>
-                                        <option value="No">No</option>
-                                    </select>
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Renovación:</label>
-                                    <select name="renovacion" id="" class="ui fluid dropdown">
-                                        <option value="Si">Sí</option>
-                                        <option value="No">No</option>
-                                    </select>
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-md-8 col-sm-8">
-                                <div class="field">
-                                    <label>Clasificación de visa:</label>
-                                    <input type="text" name="clasificacion">
-                                </div>
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Sexo:</label>
-                                    <select name="sexo" id="" class="ui fluid dropdown">
-                                        <option value="Hombre">Hombre</option>
-                                        <option value="Mujer">Mujer</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Edad:</label>
-                                    <input type="number" name="edad">
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Estado civil:</label>
-                                    <select name="estadocivil" id="" class="ui fluid dropdown">
-                                        <option value="Casado">Casado</option>
-                                        <option value="Soltero">Soltero</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="field">
-                                    <label>Escolaridad:</label>
-                                    <select name="escolaridad" id="" class="ui fluid dropdown">
-                                        <option value="Primaria">Primaria</option>
-                                        <option value="Secundaria">Secundaria</option>
-                                        <option value="Preparatoria">Preparatoria</option>
-                                        <option value="Bachillerato">Bachillerato</option>
-                                        <option value="Licenciatura">Licenciatura</option>
-                                        <option value="Maestría">Maestría</option>
-                                        <option value="Doctorado">Doctorado</option>
-                                    </select>
-                                    <span class="campoObligatorio">Campo obligatorio</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="field">
-                                    <label>Trabajo actual:</label>
-                                    <input type="text" name="trabajo">
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Nacionalidad:</label>
-                                    <input type="text" name="nacionalidad">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Ciudad donde vive:</label>
-                                    <input type="text" name="ciudadvive">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Salidas voluntarias:</label>
-                                    <input type="text" name="salidas">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="field">
-                                    <label>Deportaciones:</label>
-                                    <input type="text" name="deportaciones">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label>Solicitud (Caso)</label>
-                            <textarea name="mensaje" class="form-control"></textarea>
+        <!--inicio de mi cuerpo principal con los formularios-->
+        <section class="container">
+            <div class="ui border-top-form">
+                <form class="ui form frmTramites" method="post">
+                    <h1 class="ui dividing header p-2 text-center text-white">Registro de empleados en el extrangero</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Nombre:</label>
+                            <input type="text" name="nombre" class="form-control">
                             <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="ui error message"></div>
-                        <div class="col d-flex justify-content-end">
-                            <div class="form-group mx-2">
-                                <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
-                                    <li class=" fa fa-paper-plane pr-2"></li>
-                                </button>
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Apellidos paterno:</label>
+                            <input type="text" name="apellidoPaterno" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                    </form>
-                </div>
-            </section>
-        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Apellido materno:</label>
+                            <input type="text" name="apellidoMaterno" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Teléfono:</label>
+                            <input type="number" name="numero" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>País o visas:</label>
+                            <input type="text" name="paisovisas" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Oficio/Ocupación/Profesión:</label>
+                            <input type="text" name="oficio" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Clasificación de visa:</label>
+                            <input type="text" name="clasificacion" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Sexo:</label>
+                            <select name="sexo" class="form-select">
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Primera vez:</label>
+                            <select name="primeravez" class="form-select">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Renovación:</label>
+                            <select name="renovacion" class="form-select">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Edad:</label>
+                            <input type="number" name="edad" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Estado civil:</label>
+                            <select name="estadocivil" class="form-select">
+                                <option value="Casado">Casado</option>
+                                <option value="Soltero">Soltero</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Escolaridad:</label>
+                            <select name="escolaridad" class="form-select">
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Preparatoria">Preparatoria</option>
+                                <option value="Bachillerato">Bachillerato</option>
+                                <option value="Licenciatura">Licenciatura</option>
+                                <option value="Maestría">Maestría</option>
+                                <option value="Doctorado">Doctorado</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Trabajo actual:</label>
+                            <input type="text" name="trabajo" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Nacionalidad:</label>
+                            <input type="text" name="nacionalidad" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Ciudad donde vive:</label>
+                            <input type="text" name="ciudadvive" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Salidas voluntarias:</label>
+                            <input type="text" name="salidas" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Deportaciones:</label>
+                            <input type="text" name="deportaciones" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label>Solicitud (Caso)</label>
+                        <textarea name="mensaje" class="form-control"></textarea>
+                        <span class="campoObligatorio">Campo obligatorio</span>
+                    </div>
+                    <div class="ui error message"></div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="form-group mx-2">
+                            <button class="ui button btn btn-indigo" type="submit" id="btn-enviar">Enviar
+                                <li class=" fa fa-paper-plane pr-2"></li>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="site-footer m-0">
         <div class="container">

@@ -118,6 +118,10 @@ button.close {
     height: 50px;
 }
 
+#btn-enviar {
+    margin-bottom: 15px;
+}
+
 .contenedor-reg-empleados {
     background-color: #000;
     padding: 15px;
