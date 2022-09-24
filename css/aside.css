@@ -55,12 +55,6 @@ termina en la linea 86*/
 .card{
     text-align: justify;
 }
-/*Ajustes para tamños moviles*/
-@media only screen and (max-width: 600px) {
-    .botonera {
-        display: none;
-    }
-}
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -80,10 +74,8 @@ termina en la linea 86*/
 }
 .botonera {
     top: 0%;
-    float: left;
     flex-shrink: 0 !important;
     background: rgb(39, 39, 39);
-    height: 100% !important;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -131,16 +123,6 @@ aside::-webkit-scrollbar {
     width: 100%;
     transition: all 0.3s;
     box-sizing: border-box;
-}
-
-section{
-    padding-bottom: 1300px;
-    background: rgb(230, 229, 229);
-}
-@media only screen and (min-width: 600px) {
-    section {
-        padding-bottom: 1300px;
-    }
 }
 
 .sidemenu {
@@ -218,14 +200,12 @@ section{
 /* INICIO SECCION REGISTRO DE EMPLEADOS EN EL EXTRANJERO */
 .viewregistroempleados{
     width: 100%;
-    width: calc(99% - 165px);
     float: right;
     position: relative;
     height: 100vh;
     background: url(../img/portada15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 }
 @media only screen and (max-width: 600px) {
