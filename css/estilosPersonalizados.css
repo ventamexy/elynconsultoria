@@ -54,8 +54,18 @@ footer h3 {
 }
 
 .redireccionMenuPrincipal {
+    width: 20%;
     white-space: normal!important;
     margin: 0px!important;
+}
+
+.redireccionMenuPrincipal img {
+    width: 100%!important;
+}
+
+#navbarSupportedContent-7 ul {
+    width: 100%;
+    justify-content: center;
 }
 
 .navbar {
