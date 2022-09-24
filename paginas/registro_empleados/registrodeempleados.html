@@ -189,153 +189,115 @@
                 <form class="ui form frmTramites" method="post">
                     <h1 class="ui dividing header p-2 text-center text-white">Registro de empleados en el extrangero</h1>
                     <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Nombre:</label>
-                                <input type="text" name="nombre">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Apellidos paterno:</label>
-                                <input type="text" name="apellidoPaterno">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Apellido materno:</label>
-                                <input type="text" name="apellidoMaterno">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Email:</label>
-                                <input type="email" name="email">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Teléfono:</label>
-                                <input type="number" name="numero">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>País o visas:</label>
-                                <input type="text" name="paisovisas">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Oficio/Ocupación/Profesión:</label>
-                                <input type="text" name="oficio">
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Primera vez:</label>
-                                <select name="primeravez" id="" class="ui fluid dropdown">
-                                    <option value="Si">Sí</option>
-                                    <option value="No">No</option>
-                                </select>
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Renovación:</label>
-                                <select name="renovacion" id="" class="ui fluid dropdown">
-                                    <option value="Si">Sí</option>
-                                    <option value="No">No</option>
-                                </select>
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="field">
-                                <label>Clasificación de visa:</label>
-                                <input type="text" name="clasificacion">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Nombre:</label>
+                            <input type="text" name="nombre" class="form-control">
                             <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Sexo:</label>
-                                <select name="sexo" id="" class="ui fluid dropdown">
-                                    <option value="Hombre">Hombre</option>
-                                    <option value="Mujer">Mujer</option>
-                                </select>
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Apellidos paterno:</label>
+                            <input type="text" name="apellidoPaterno" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Edad:</label>
-                                <input type="number" name="edad">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Apellido materno:</label>
+                            <input type="text" name="apellidoMaterno" class="form-control">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Estado civil:</label>
-                                <select name="estadocivil" id="" class="ui fluid dropdown">
-                                    <option value="Casado">Casado</option>
-                                    <option value="Soltero">Soltero</option>
-                                </select>
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <div class="field">
-                                <label>Escolaridad:</label>
-                                <select name="escolaridad" id="" class="ui fluid dropdown">
-                                    <option value="Primaria">Primaria</option>
-                                    <option value="Secundaria">Secundaria</option>
-                                    <option value="Preparatoria">Preparatoria</option>
-                                    <option value="Bachillerato">Bachillerato</option>
-                                    <option value="Licenciatura">Licenciatura</option>
-                                    <option value="Maestría">Maestría</option>
-                                    <option value="Doctorado">Doctorado</option>
-                                </select>
-                                <span class="campoObligatorio">Campo obligatorio</span>
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Teléfono:</label>
+                            <input type="number" name="numero" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="field">
-                                <label>Trabajo actual:</label>
-                                <input type="text" name="trabajo">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>País o visas:</label>
+                            <input type="text" name="paisovisas" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Oficio/Ocupación/Profesión:</label>
+                            <input type="text" name="oficio" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Clasificación de visa:</label>
+                            <input type="text" name="clasificacion" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Sexo:</label>
+                            <select name="sexo" class="form-select">
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Primera vez:</label>
+                            <select name="primeravez" class="form-select">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Renovación:</label>
+                            <select name="renovacion" class="form-select">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Edad:</label>
+                            <input type="number" name="edad" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Estado civil:</label>
+                            <select name="estadocivil" class="form-select">
+                                <option value="Casado">Casado</option>
+                                <option value="Soltero">Soltero</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3 form-group">
+                            <label>Escolaridad:</label>
+                            <select name="escolaridad" class="form-select">
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Preparatoria">Preparatoria</option>
+                                <option value="Bachillerato">Bachillerato</option>
+                                <option value="Licenciatura">Licenciatura</option>
+                                <option value="Maestría">Maestría</option>
+                                <option value="Doctorado">Doctorado</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Trabajo actual:</label>
+                            <input type="text" name="trabajo" class="form-control">
                         </div>
 
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Nacionalidad:</label>
-                                <input type="text" name="nacionalidad">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Nacionalidad:</label>
+                            <input type="text" name="nacionalidad" class="form-control">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Ciudad donde vive:</label>
-                                <input type="text" name="ciudadvive">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Ciudad donde vive:</label>
+                            <input type="text" name="ciudadvive" class="form-control">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Salidas voluntarias:</label>
-                                <input type="text" name="salidas">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Salidas voluntarias:</label>
+                            <input type="text" name="salidas" class="form-control">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="field">
-                                <label>Deportaciones:</label>
-                                <input type="text" name="deportaciones">
-                            </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label>Deportaciones:</label>
+                            <input type="text" name="deportaciones" class="form-control">
                         </div>
                     </div>
-                    <div class="field">
+                    <div class="col-12 form-group">
                         <label>Solicitud (Caso)</label>
                         <textarea name="mensaje" class="form-control"></textarea>
                         <span class="campoObligatorio">Campo obligatorio</span>
