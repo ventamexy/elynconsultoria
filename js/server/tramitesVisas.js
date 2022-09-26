@@ -62,7 +62,7 @@ window.addEventListener("load", function() {
 
             $.ajax({
 
-                data:frmTramites+"&tipoPeticion=enviarEmailTramiteVisa"+"&tramiteVisa=true",
+                data:frmTramites+"&tipoPeticion=enviarEmailTramiteVisa",
                 url:urlServidor,
                 method:"POST",
                 dataType:"JSON",
