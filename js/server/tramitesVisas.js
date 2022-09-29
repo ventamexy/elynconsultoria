@@ -3,6 +3,7 @@ window.addEventListener("load", function() {
     $(document).on("click", ".btn-enviar", function(){
 
         $(".cargaSpinner").removeClass("d-none");
+        $(".campoValidacion").removeClass("campoValidacion");
         $(".btn-enviar").attr({disabled:true});
         let imgNotificacion = "../../images/iconos-notificaciones/success.png";
         let typeButton = "btn btn-danger";
@@ -38,6 +39,30 @@ window.addEventListener("load", function() {
                 email.addClass("campoValidacion");
                 throw "El correo electrónico es incorrecto.";
             } email.removeClass("campoValidacion");
+
+
+            let telCelular = $("input[name='telCelular']");
+            let valorTelCelular = telCelular.val().trim();
+            if ( valorTelCelular.length > 10 || valorTelCelular.length < 10 || !Number.isInteger(valorTelCelular * 1) ) {
+                telCelular.addClass("campoValidacion");
+                throw "El número de teléfono es incorrecto.";
+            } telCelular.removeClass("campoValidacion");
+
+
+            let tipoVisa = $("select[name='tipoVisa']");
+            let valorTipoVisa = tipoVisa.val().trim();
+            if ( valorTipoVisa < 1 || valorTipoVisa > 9 ) {
+                 tipoVisa.addClass("campoValidacion");
+                throw "El tipo de visa seleccionado es incorrecto, debe seleccionar entre la visa de turista y de trabajo.";
+            } tipoVisa.removeClass("campoValidacion");
+
+
+            let asuntoSolicitado = $("select[name='asuntoSolicitado']");
+            let valorAsuntoSolicitado = asuntoSolicitado.val().trim();
+            if ( valorAsuntoSolicitado < 1 || valorAsuntoSolicitado > 9 ) {
+                 asuntoSolicitado.addClass("campoValidacion");
+                throw "El asunto seleccionado es incorrecto.";
+            } asuntoSolicitado.removeClass("campoValidacion");
 
 
             let mensaje = $("textarea[name='mensaje']");
