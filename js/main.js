@@ -53,8 +53,6 @@ $(document).on("scroll", function() {
         $(".irAbajo i").removeClass("transform-r-180");
         $(".irArriba").removeClass("irArriba").addClass("irAbajo");
     }
-
-    console.log( scrollYPosicionActual );
         
 });
 
