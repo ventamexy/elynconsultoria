@@ -77,6 +77,7 @@ window.addEventListener("load", function() {
                         if ( data["estadoEnvioCorreo"] == true ) {
                             typeButton = "btn btn-success";
                             $("input, textarea").val("");
+                            $("select option").prop("selected", 0);
                             estadoEnvio = true;
                         } else {
                             imgNotificacion = "../../images/iconos-notificaciones/error.png";
