@@ -96,9 +96,10 @@ footer h3 {
 }
 
 .menuPrincipal {
-    display: flex !important;
+    position: relative;
+    /* display: flex !important;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .menuPrincipal li {
