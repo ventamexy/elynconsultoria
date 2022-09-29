@@ -34,7 +34,7 @@ window.addEventListener("load", function() {
 $(document).on("scroll", function() {
 
     let scrollYPosicionActual = $(document)[0].scrollingElement.scrollTop;
-    let menuSuperior = $("#navbar");
+    let menuSuperior = $(".menuPrincipal");
     if ( menuSuperior.length > 0 ) {
         if ( scrollYPosicionActual >= 200 ) {
             menuSuperior[0].classList.add("menu-fijado");
@@ -53,6 +53,8 @@ $(document).on("scroll", function() {
         $(".irAbajo i").removeClass("transform-r-180");
         $(".irArriba").removeClass("irArriba").addClass("irAbajo");
     }
+
+    console.log( scrollYPosicionActual );
         
 });
 
