@@ -127,3 +127,8 @@ button.close {
     padding: 15px;
     font-style: italic;
 }
+
+.contenedor-imagenes {
+    height: 450px;
+    object-fit: contain;
+}
