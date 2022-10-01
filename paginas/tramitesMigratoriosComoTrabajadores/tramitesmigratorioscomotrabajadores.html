@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../../css/otrosEstilos.css">
     <link rel="stylesheet" href="../../css/estilosPersonalizados.css">
     <link rel="stylesheet" href="../../css/estilosFormularioContacto.css">
+    <link rel="stylesheet" href="../../css/spinnerCarga.css">
+    <link rel="stylesheet" href="../../css/estilosReCaptcha.css" />
     <!-- OLD -->
     <!-- Material Design Bootstrap -->
     <link href="../../css/mdb.min.css" rel="stylesheet">
@@ -27,6 +29,7 @@
     <link rel="stylesheet" href="../../css/semantic.min.css">
     <!-- lightbox -->
     <link rel="stylesheet" href="../../css/lightbox.min.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!--Navbar-->
@@ -201,8 +204,8 @@
                                 <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
                             <div class="col-12 col-md-6 mb-3 form-group">
-                                <label for="documentoAsuntoSolicitado">Asunto/Caso a solicitar:</label>
-                                <select class="form-select" name="documentoAsuntoSolicitado" id="documentoAsuntoSolicitado">
+                                <label for="asuntoSolicitado">Asunto/Caso a solicitar:</label>
+                                <select class="form-select" name="asuntoSolicitado" id="asuntoSolicitado">
                                     <option value="0">--Seleccione--</option>
                                     <option value="1">Representación musical</option>
                                     <option value="2">Agentes</option>
@@ -226,15 +229,28 @@
                                 rows="8"></textarea>
                                 <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
+                            <div class="row d-flex align-items-center position-relative">
+                                <div class="g-recaptcha" data-sitekey="6LfQhggiAAAAACBfSE_PeQCmFZhSNvgD8ddm7kJi"></div>
+                                <div class="col-1 position-absolute contenedor-boton">
+                                    <button class="reload-captcha" type="button">
+                                        <i class="fa fa-refresh"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
                             <div class="row my-3">
                                 <div class="d-flex justify-content-center">
                                     <button 
-                                    class="ui button btn btn-indigo" 
-                                    type="button"
-                                    id="btn-enviar">Enviar
+                                    class="ui button btn btn-indigo btn-enviar" 
+                                    type="button">Enviar
                                         <li class=" fa fa-paper-plane pr-2"></li>
                                     </button>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="cargaSpinner d-none">
+                            <div class="circleA">
+                                <div class="circleB"></div>
                             </div>
                         </div>
                     </form>
@@ -698,6 +714,8 @@
     <script src="../../assets/js/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/bootbox/dist/bootbox.min.js"></script>
+    <script src="../../js/funcionesGenerales.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
@@ -707,5 +725,6 @@
     <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
     nonce="I0coc6CJ"></script>
+    <script src="../../js/server/tramitesMigratoriosTrabajadores.js"></script>
 </body>
 </html>

@@ -79,7 +79,7 @@ window.addEventListener("load", function() {
 
             $.ajax({
 
-                data:frmTramites+"&tipoPeticion=enviarEmailTramiteConsular",
+                data:frmTramites+"&tipoPeticion=enviarEmailTramiteMigratorioTra",
                 url:urlServidor,
                 method:"POST",
                 dataType:"JSON",
