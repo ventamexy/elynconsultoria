@@ -96,29 +96,29 @@ window.addEventListener("load", function() {
              * 
              */
             let campoNumeroTrabajadores = $("select[name='numeroTrabajadores']");
-            let valorNumeroTrabajadores = campoNumeroTrabajadores.value.trim();
-            if ( valorNumeroTrabajadores != "" && ( valorNumeroTrabajadores < 1 || valorNumeroTrabajadores > 7 ) ) { 
+            let valorNumeroTrabajadores = campoNumeroTrabajadores.val().trim();
+            if ( valorNumeroTrabajadores != 0 && ( valorNumeroTrabajadores < 1 || valorNumeroTrabajadores > 7 ) ) { 
                 campoNumeroTrabajadores.addClass("campoValidacion");
                 throw "El número apróximado de trabajadores solicitados es incorrecto.";
             } campoNumeroTrabajadores.removeClass("campoValidacion");
 
             let campoTipoNegocio = $("input[name='tipoNegocio']");
-            let valorTipoNegocio = campoTipoNegocio.value.trim();
-            if ( valorTipoNegocio != "" && valorTipoNegocio.length < 5 && valorTipoNegocio.length > 50 ) {
+            let valorTipoNegocio = campoTipoNegocio.val().trim();
+            if ( valorTipoNegocio != "" && ( valorTipoNegocio.length < 5 || valorTipoNegocio.length > 50 ) ) {
                 campoTipoNegocio.addClass("campoValidacion");
                 throw "El tipo de negocio debe de detener una longitud mínima de 5 caracteres máximo de 50.";
             } campoTipoNegocio.removeClass("campoValidacion");
 
             let campoNegocioEstacionalCarga = $("input[name='negocioEstacionalCarga']");
-            let valorNegocioEstacionalCarga = campoNegocioEstacionalCarga.value.trim();
-            if ( valorNegocioEstacionalCarga != "" && valorNegocioEstacionalCarga.length < 5 && valorTipoNegocio.length > 50 ) {
+            let valorNegocioEstacionalCarga = campoNegocioEstacionalCarga.val().trim();
+            if ( valorNegocioEstacionalCarga != "" && ( valorNegocioEstacionalCarga.length < 5 || valorNegocioEstacionalCarga.length > 50 ) ) {
                 campoNegocioEstacionalCarga.addClass("campoValidacion");
                 throw "El valor para este campo debe de detener una longitud mínima de 5 caracteres máximo de 50.";
             } campoNegocioEstacionalCarga.removeClass("campoValidacion");
 
             let campoDescripcionTrabajo = $("textarea[name='descripcionTrabajo']");
-            let valorDescripcionTrabajo = campoDescripcionTrabajo.value.trim();
-            if ( valorDescripcionTrabajo != "" && valorDescripcionTrabajo.length < 200 && valorDescripcionTrabajo.length > 3500 ) {
+            let valorDescripcionTrabajo = campoDescripcionTrabajo.val().trim();
+            if ( valorDescripcionTrabajo != "" && ( valorDescripcionTrabajo.length < 200 || valorDescripcionTrabajo.length > 3500 ) ) {
                 campoDescripcionTrabajo.addClass("campoValidacion");
                 throw "La descripción del trabajo debe de detener una longitud mínima de 200 caracteres máximo de 3500.";
             } campoDescripcionTrabajo.removeClass("campoValidacion");
