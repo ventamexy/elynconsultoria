@@ -54,3 +54,22 @@ let date = {
         return new Date().getFullYear();
     },
 }
+
+
+// Get propiedades name
+function getPropiedadesNameForm() {
+    
+    let arrayCamposFormulario = $("form")[0].length;
+    let indexCampo = 0;
+    let campo = null;
+
+    while ( indexCampo < arrayCamposFormulario ) {
+        campo = arrayCamposFormulario[indexCampo];
+        console.log( campo.type );
+        // if ( campo.type != "button" ) {
+        //     console.log(campo.name+"\n");
+        // }
+        indexCampo++;
+    }
+
+}
