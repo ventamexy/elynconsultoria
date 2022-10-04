@@ -245,3 +245,13 @@ button.close {
 .p-fixed-initial {
     position: initial!important;
 }
+
+.texto-cargando {
+    color: #ff6363;
+    font-weight: bold;
+}
+
+/* Font size */
+.font-size-16px {
+    font-size: 16px!important;
+}
