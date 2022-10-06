@@ -64,18 +64,17 @@ window.addEventListener("load", function() {
 
             let giroEmpresa = $("select[name='giroEmpresa']");
             let valorGiroEmpresa = giroEmpresa.val().trim();
-            if ( valorGiroEmpresa < 1 || valorGiroEmpresa > 12 ) {
+            if ( !validarNumeroEntero( valorGiroEmpresa ) || valorGiroEmpresa < 1 || valorGiroEmpresa > 12 ) {
                 giroEmpresa.addClass("campoValidacion");
-                throw "El asunto seleccionado es incorrecto.";
+                throw "El giro de la empresa es incorrecta.";
             } giroEmpresa.removeClass("campoValidacion");
 
             let otroGiroEmpresa = $("input[name='otroGiroEmpresa']");
             let valorOtroGiroEmpresa = otroGiroEmpresa.val().trim();
             if ( valorGiroEmpresa == 12 && ( valorOtroGiroEmpresa == "" || valorOtroGiroEmpresa.length < 5 || valorOtroGiroEmpresa.length > 100 ) ) {
                 otroGiroEmpresa.addClass("campoValidacion");
-                throw "El giro de la empresa especificado no puede ser vacío y no debe se superar un máximo de 100 caracteres.";
+                throw "El giro de la empresa especificado no puede ser vacío y no debe se superar un máxima de 100 caracteres.";
             } otroGiroEmpresa.removeClass("campoValidacion");
-
 
             let mensaje = $("textarea[name='mensaje']");
             let valorMensaje = mensaje.val().trim();
@@ -87,122 +86,122 @@ window.addEventListener("load", function() {
 
             let asuntoSolicitado = $("select[name='asuntoSolicitado']");
             let valorAsuntoSolicitado = asuntoSolicitado.val().trim();
-            if ( valorAsuntoSolicitado < 1 || valorAsuntoSolicitado > 11 ) {
+            if ( !validarNumeroEntero( valorAsuntoSolicitado ) || valorAsuntoSolicitado < 1 || valorAsuntoSolicitado > 11 ) {
                 asuntoSolicitado.addClass("campoValidacion");
                 throw "El asunto seleccionado es incorrecto.";
             } asuntoSolicitado.removeClass("campoValidacion");
-            
+        
 
-            /**
-             * 
-             * //
-             * --- Campos opcionales.
-             * //
-             * 
-             */
+            // ---PROGRAMA H-2B
             let campoNumeroTrabajadores = $("select[name='numeroTrabajadores']");
             let valorNumeroTrabajadores = campoNumeroTrabajadores.val().trim();
-            if ( valorNumeroTrabajadores != 0 && ( valorNumeroTrabajadores < 1 || valorNumeroTrabajadores > 7 ) ) { 
+            if ( !validarNumeroEntero( valorNumeroTrabajadores ) || valorNumeroTrabajadores < 1 || valorNumeroTrabajadores > 7 ) {
                 campoNumeroTrabajadores.addClass("campoValidacion");
                 throw "El número apróximado de trabajadores solicitados es incorrecto.";
             } campoNumeroTrabajadores.removeClass("campoValidacion");
 
-            // --- Los campos pasan a ser obligatorios.
-            if ( valorNumeroTrabajadores != 0 ) {
 
-                let campoTipoNegocio = $("input[name='tipoNegocio']");
-                let valorTipoNegocio = campoTipoNegocio.val().trim();
-                if ( valorTipoNegocio.length < 5 || valorTipoNegocio.length > 50 ) {
-                    campoTipoNegocio.addClass("campoValidacion");
-                    throw "El tipo de negocio debe de detener una longitud mínima de 5 caracteres máximo de 50.";
-                } campoTipoNegocio.removeClass("campoValidacion");
-    
-                let campoNegocioEstacionalCarga = $("input[name='negocioEstacionalCarga']");
-                let valorNegocioEstacionalCarga = campoNegocioEstacionalCarga.val().trim();
-                if ( valorNegocioEstacionalCarga.length < 5 || valorNegocioEstacionalCarga.length > 50 ) {
-                    campoNegocioEstacionalCarga.addClass("campoValidacion");
-                    throw "El valor para este campo debe de detener una longitud mínima de 5 caracteres máximo de 50.";
-                } campoNegocioEstacionalCarga.removeClass("campoValidacion");
-    
-                let campoDescripcionTrabajo = $("textarea[name='descripcionTrabajo']");
-                let valorDescripcionTrabajo = campoDescripcionTrabajo.val().trim();
-                if ( valorDescripcionTrabajo.length < 200 || valorDescripcionTrabajo.length > 3500 ) {
-                    campoDescripcionTrabajo.addClass("campoValidacion");
-                    throw "La descripción del trabajo debe de detener una longitud mínima de 200 caracteres máximo de 3500.";
-                } campoDescripcionTrabajo.removeClass("campoValidacion");
-                
-                let campoSalarioOfrecido = $("input[name='salarioOfrecido']");
-                let valorSalarioOfrecido = campoSalarioOfrecido.val().trim();
-                if ( !validarNumeroDecimal( valorSalarioOfrecido ) ) {
-                    campoSalarioOfrecido.addClass("campoValidacion");
-                    throw "El valor para el campo salario debe ser numérico.";
-                } campoSalarioOfrecido.removeClass("campoValidacion");
-    
-                let campoAlquilerServiciosCostos = $("input[name='alquilerServiciosCostos']");
-                let valorAlquilerServiciosCostos = campoAlquilerServiciosCostos.val().trim();
-                if ( !validarNumeroDecimal( valorAlquilerServiciosCostos ) ) {
-                    campoAlquilerServiciosCostos.addClass("campoValidacion");
-                    throw "El valor para el campo de costos de servicios y alquileres para los trabajadores debe ser numérico.";
-                } campoAlquilerServiciosCostos.removeClass("campoValidacion");
-    
-                // --- Fecha de inicio
-                let campoDiaFechaInicio = $("select[name='diaFechaInicio']");
-                let valorDiaFechaInicio = campoDiaFechaInicio.val().trim();
-                if ( valorDiaFechaInicio < 1 || valorDiaFechaInicio > 31 ) {
-                    campoDiaFechaInicio.addClass("campoValidacion");
-                    throw "El día seleccionado es incorrecto.";
-                } campoDiaFechaInicio.removeClass("campoValidacion");
-    
-                let campoMesFechaInicio = $("select[name='mesFechaInicio']");
-                let valorMesFechaInicio = campoMesFechaInicio.val().trim();
-                if ( valorMesFechaInicio < 1 || valorMesFechaInicio > 12 ) {
-                    campoMesFechaInicio.addClass("campoValidacion");
-                    throw "El mes seleccionado es incorrecto.";
-                } campoMesFechaInicio.removeClass("campoValidacion");
-    
-                let campoAnioFechaInicio = $("select[name='anioFechaInicio']");
-                let valorAnioFechaInicio = campoAnioFechaInicio.val().trim();
-                if ( valorAnioFechaInicio < date.year() ) {
-                    campoAnioFechaInicio.addClass("campoValidacion");
-                    throw "El año seleccionado debe ser mayor o igual al año actual.";
-                } campoAnioFechaInicio.removeClass("campoValidacion");
-    
-                // --- Fecha fin
-                let campoDiaFechaFin = $("select[name='diaFechaFin']");
-                let valorDiaFechaFin = campoDiaFechaFin.val().trim();
-                if ( valorDiaFechaFin < 1 || valorDiaFechaFin > 31 ) {
-                    campoDiaFechaFin.addClass("campoValidacion");
-                    throw "El día seleccionado es incorrecto.";
-                } campoDiaFechaFin.removeClass("campoValidacion");
-    
-                let campoMesFechaFin = $("select[name='mesFechaFin']");
-                let valorMesFechaFin = campoMesFechaFin.val().trim();
-                if ( valorMesFechaFin < 1 || valorMesFechaFin > 12 ) {
-                    campoMesFechaFin.addClass("campoValidacion");
-                    throw "El mes seleccionado es incorrecto.";
-                } campoMesFechaFin.removeClass("campoValidacion");
-    
-                let campoAnioFechaFin = $("select[name='anioFechaFin']");
-                let valorAnioFechaFin = campoAnioFechaFin.val().trim();
-                if ( valorAnioFechaFin < date.year() ) {
-                    campoAnioFechaFin.addClass("campoValidacion");
-                    throw "El año seleccionado debe ser mayor o igual al año actual.";
-                } campoAnioFechaFin.removeClass("campoValidacion");
+            let campoTipoNegocio = $("input[name='tipoNegocio']");
+            let valorTipoNegocio = campoTipoNegocio.val().trim();
+            if ( valorTipoNegocio.length < 5 || valorTipoNegocio.length > 50 ) {
+                campoTipoNegocio.addClass("campoValidacion");
+                throw "El tipo de negocio debe de detener una longitud mínima de 5 caracteres máxima de 50.";
+            } campoTipoNegocio.removeClass("campoValidacion");
 
-                // --- Validaciones años.
 
-                if ( valorAnioFechaInicio < date.year() ) {
-                    throw "El año de inicio no puede ser menor al año actual.";
-                }
+            let campoNegocioEstacionalCarga = $("input[name='negocioEstacionalCarga']");
+            let valorNegocioEstacionalCarga = campoNegocioEstacionalCarga.val().trim();
+            if ( valorNegocioEstacionalCarga.length < 5 || valorNegocioEstacionalCarga.length > 50 ) {
+                campoNegocioEstacionalCarga.addClass("campoValidacion");
+                throw "El valor para este campo debe de detener una longitud mínima de 5 caracteres máxima de 50.";
+            } campoNegocioEstacionalCarga.removeClass("campoValidacion");
 
-                if ( valorAnioFechaFin < date.year() ) {
-                    throw "El año de finialización no puede ser menor al año actual.";
-                }
 
-                if ( valorAnioFechaFin < valorAnioFechaInicio ) {
-                    throw "El año de finialización no puede ser menor al año de inicio.";
-                }
-                
+            let campoDescripcionTrabajo = $("textarea[name='descripcionTrabajo']");
+            let valorDescripcionTrabajo = campoDescripcionTrabajo.val().trim();
+            if ( valorDescripcionTrabajo.length < 200 || valorDescripcionTrabajo.length > 3500 ) {
+                campoDescripcionTrabajo.addClass("campoValidacion");
+                throw "La descripción del trabajo debe de detener una longitud mínima de 200 caracteres máxima de 3500.";
+            } campoDescripcionTrabajo.removeClass("campoValidacion");
+            
+
+            let campoSalarioOfrecido = $("input[name='salarioOfrecido']");
+            let valorSalarioOfrecido = campoSalarioOfrecido.val().trim();
+            if ( !validarNumeroDecimal( valorSalarioOfrecido ) ) {
+                campoSalarioOfrecido.addClass("campoValidacion");
+                throw "El valor para el campo salario debe ser numérico.";
+            } campoSalarioOfrecido.removeClass("campoValidacion");
+
+
+            let campoAlquilerServiciosCostos = $("input[name='alquilerServiciosCostos']");
+            let valorAlquilerServiciosCostos = campoAlquilerServiciosCostos.val().trim();
+            if ( !validarNumeroDecimal( valorAlquilerServiciosCostos ) ) {
+                campoAlquilerServiciosCostos.addClass("campoValidacion");
+                throw "El valor para el campo de costos de servicios y alquileres para los trabajadores debe ser numérico.";
+            } campoAlquilerServiciosCostos.removeClass("campoValidacion");
+            
+
+            // --- Fecha de inicio
+            let campoDiaFechaInicio = $("select[name='diaFechaInicio']");
+            let valorDiaFechaInicio = campoDiaFechaInicio.val().trim();
+            if ( !validarNumeroEntero(valorDiaFechaInicio) || valorDiaFechaInicio < 1 || valorDiaFechaInicio > 31 ) {
+                campoDiaFechaInicio.addClass("campoValidacion");
+                throw "El día seleccionado es incorrecto.";
+            } campoDiaFechaInicio.removeClass("campoValidacion");
+
+
+            let campoMesFechaInicio = $("select[name='mesFechaInicio']");
+            let valorMesFechaInicio = campoMesFechaInicio.val().trim();
+            if ( !validarNumeroEntero(valorMesFechaInicio) || valorMesFechaInicio < 1 || valorMesFechaInicio > 12 ) {
+                campoMesFechaInicio.addClass("campoValidacion");
+                throw "El mes seleccionado es incorrecto.";
+            } campoMesFechaInicio.removeClass("campoValidacion");
+
+
+            let campoAnioFechaInicio = $("select[name='anioFechaInicio']");
+            let valorAnioFechaInicio = campoAnioFechaInicio.val().trim();
+            if ( !validarNumeroEntero(valorAnioFechaInicio) || valorAnioFechaInicio < date.year() ) {
+                campoAnioFechaInicio.addClass("campoValidacion");
+                throw "El año seleccionado debe ser mayor o igual al año actual.";
+            } campoAnioFechaInicio.removeClass("campoValidacion");
+
+
+            // --- Fecha fin
+            let campoDiaFechaFin = $("select[name='diaFechaFin']");
+            let valorDiaFechaFin = campoDiaFechaFin.val().trim();
+            if ( !validarNumeroEntero(valorDiaFechaFin) || valorDiaFechaFin < 1 || valorDiaFechaFin > 31 ) {
+                campoDiaFechaFin.addClass("campoValidacion");
+                throw "El día seleccionado es incorrecto.";
+            } campoDiaFechaFin.removeClass("campoValidacion");
+
+
+            let campoMesFechaFin = $("select[name='mesFechaFin']");
+            let valorMesFechaFin = campoMesFechaFin.val().trim();
+            if ( !validarNumeroEntero(valorMesFechaFin) || valorMesFechaFin < 1 || valorMesFechaFin > 12 ) {
+                campoMesFechaFin.addClass("campoValidacion");
+                throw "El mes seleccionado es incorrecto.";
+            } campoMesFechaFin.removeClass("campoValidacion");
+
+
+            let campoAnioFechaFin = $("select[name='anioFechaFin']");
+            let valorAnioFechaFin = campoAnioFechaFin.val().trim();
+            if ( !validarNumeroEntero(valorAnioFechaFin) || valorAnioFechaFin < date.year() ) {
+                campoAnioFechaFin.addClass("campoValidacion");
+                throw "El año seleccionado debe ser mayor o igual al año actual.";
+            } campoAnioFechaFin.removeClass("campoValidacion");
+
+
+            // --- Validaciones años.
+            if ( valorAnioFechaInicio < date.year() ) {
+                throw "El año de inicio no puede ser menor al año actual.";
+            }
+
+            if ( valorAnioFechaFin < date.year() ) {
+                throw "El año de finialización no puede ser menor al año actual.";
+            }
+
+            if ( valorAnioFechaFin < valorAnioFechaInicio ) {
+                throw "El año de finialización no puede ser menor al año de inicio.";
             }
             
 
@@ -220,7 +219,7 @@ window.addEventListener("load", function() {
 
             $.ajax({
 
-                data:frmTramites+"&tipoPeticion=enviarEmailTramiteEmpresa",
+                data:frmTramites+"&tipoPeticion=enviarEmailTramiteEmpresaPersonal",
                 url:urlServidor,
                 method:"POST",
                 dataType:"JSON",
