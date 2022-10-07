@@ -6,29 +6,6 @@ window.addEventListener("load", function() {
 
 });
 
-
-// --- Validar número entero
-function validarNumeroEntero( valor = "" ) {
-
-    if ( !(/^[0-9]\d*$/.test(valor)) ) {
-        return false;
-    }
-
-    return true;
-
-}
-
-// --- Validar número decimal
-function validarNumeroDecimal( valor = "" ) {
-
-    if ( !(/^[0-9]\d*(\.\d+)?$/.test(valor)) ) {
-        return false;
-    }
-
-    return true;
-
-}
-
 // --- Funcion para generar select de un rango de años.
 function selectRangoAnios( contenedor, objPropiedades ) {
     
@@ -71,5 +48,47 @@ function getPropiedadesNameForm() {
         // }
         indexCampo++;
     }
+
+}
+
+/**
+ * 
+ * // 
+ *  --- Expresiones regulares para validaciones 
+ * //
+ * 
+ */
+
+
+// --- Validar número entero
+function validarNumeroEntero( valor = "" ) {
+
+    if ( !(/^[0-9]\d*$/.test(valor)) ) {
+        return false;
+    }
+
+    return true;
+
+}
+
+// --- Validar número decimal
+function validarNumeroDecimal( valor = "" ) {
+
+    if ( !(/^[0-9]\d*(\.\d+)?$/.test(valor)) ) {
+        return false;
+    }
+
+    return true;
+
+}
+
+// --- Validar email
+function validarEmail( valor = "" ) {
+
+    if ( !(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(valor)) ) {
+        return false;
+    }
+
+    return true;
 
 }
