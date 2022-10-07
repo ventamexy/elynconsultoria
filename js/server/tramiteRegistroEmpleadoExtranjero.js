@@ -85,20 +85,88 @@ window.addEventListener("load", function() {
                 throw "El número de teléfono es incorrecto.";
             } telCelular.removeClass("campoValidacion");
 
+
             let campoPaisInteresado = $("select[name='paisInteresado']");
             let valorPaisInteresado = campoPaisInteresado.val().trim();
             if ( valorPaisInteresado < 1 || valorPaisInteresado > 3 || !validarNumeroEntero( valorPaisInteresado ) ) {
                 campoPaisInteresado.addClass("campoValidacion");
                 throw "El país seleccionado es incorrecto.";
-            }
+            } campoPaisInteresado.removeClass("campoValidacion");
+
 
             if ( valorPaisInteresado == 3 ) {
                 let campoOtroPaisInteresado = $("input[name='otroPaisInteresado']");
                 let valorCampoOtroPaisInteresado = campoOtroPaisInteresado.val().trim();
                 if ( valorCampoOtroPaisInteresado == "" || valorCampoOtroPaisInteresado.length < 3 ) {
-                    throw "El valor para el campo de otro país seleccionado es incorrecto.";   
-                }
+                    campoOtroPaisInteresado.addClass("campoValidacion");
+                    throw "El valor para el campo de otro país es incorrecto.";   
+                }  campoOtroPaisInteresado.addClass("campoValidacion");
             }
+            
+            // ---
+            let campoOficio = $("input[name='oficio']");
+            let valorCampoOficio = campoOficio.val().trim();
+            if ( valorCampoOficio == "" || valorCampoOficio.length < 3) {
+                campoOficio.addClass("campoValidacion");
+                throw "El campo oficio no puede ser vacío y debe de tener una longitud mímina de 3 caracteres.";
+            } campoOficio.removeClass("campoValidacion");
+
+            
+            let campoPrimeraVezTramite = $("select[name='primeravez']");
+            let valorPrimeraVezTramite = campoPrimeraVezTramite.val().trim();
+            if ( valorPrimeraVezTramite != "Si" && valorPrimeraVezTramite != "No"  ) {
+                campoPrimeraVezTramite.addClass("campoValidacion");
+                throw "La opción seleccionada para el campo primera vez del trámite es incorrecta.";
+            } campoPrimeraVezTramite.removeClass("campoValidacion");
+
+
+            let campoTotalVecesTramite = $("input[name='totalVecesTramite']");
+            let valorTotalVecesTramite = campoTotalVecesTramite.val().trim();
+            if ( valorTotalVecesTramite <= 0 || !validarNumeroEntero( valorTotalVecesTramite )) {
+                campoTotalVecesTramite.addClass("campoValidacion");
+                throw "El valor para el campo de total de veces intentado es incorrecto.";
+            } campoTotalVecesTramite.removeClass("campoValidacion");
+
+            
+            let campoRenovacion = $("select[name='renovacion']");
+            let valorRenovacion = campoRenovacion.val().trim();
+            if ( valorRenovacion != "Si" && valorRenovacion != "No"  ) {
+                campoRenovacion.addClass("campoValidacion");
+                throw "La opción seleccionada para el campo de renovación es incorrecta.";
+            } campoRenovacion.removeClass("campoValidacion");
+
+
+            let campoTrabajo = $("input[name='trabajo']");
+            let valorTrabajo = campoTrabajo.val().trim();
+            if ( valorTrabajo == "" || valorTrabajo.length < 5 ) {
+                campoTrabajo.addClass("campoValidacion");
+                throw "El valor para el campo trabajo actual no puede ser vacío y debe tener una longitud mínima de 5 caracteres.";
+            } campoTrabajo.removeClass("campoValidacion");
+
+
+            let campoNacionalidad = $("input[name='nacionalidad']");
+            let valorNacionalidad = campoNacionalidad.val().trim();
+            if ( valorNacionalidad == "" || valorNacionalidad.length < 5 ) {
+                campoNacionalidad.addClass("campoValidacion");
+                throw "El valor para el campo de nacionalidad no puede ser vacío y debe tener una longitud mínima de 5 caracteres.";
+            } campoNacionalidad.removeClass("campoValidacion");
+
+
+            let campoCiudad = $("input[name='ciudadvive']");
+            let valorCiudad = campoCiudad.val().trim();
+            if ( valorCiudad == "" || valorCiudad.length < 3 ) {
+                campoCiudad.addClass("campoValidacion");
+                throw "El valor para el campo ciudad donde vive actualmente no puede ser vacío y debe tener una longitud mínima de 3 caracteres.";
+            } campoCiudad.removeClass("campoValidacion");
+            
+
+            let campoDeportaciones = $("select[name='deportaciones']");
+            let valorDeportaciones = campoDeportaciones.val().trim();
+            if ( valorDeportaciones != "Si" && valorDeportaciones != "No" ) {
+                campoDeportaciones.addClass("campoValidacion");
+                throw "El valor para el campo deportaciones es incorrecto.";
+            } campoDeportaciones.removeClass("campoValidacion");
+
 
             let mensaje = $("textarea[name='mensaje']");
             let valorMensaje = mensaje.val().trim();
@@ -122,7 +190,7 @@ window.addEventListener("load", function() {
 
             $.ajax({
 
-                data:frmTramites+"&tipoPeticion=enviarEmailTramiteEmpresaPersonal",
+                data:frmTramites+"&tipoPeticion=enviarEmailRegistroEmpleadosExtranjero",
                 url:urlServidor,
                 method:"POST",
                 dataType:"JSON",
