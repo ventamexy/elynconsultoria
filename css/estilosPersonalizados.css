@@ -223,6 +223,12 @@ button.close {
     -webkit-appearance: none;
 }
 
+.boton-fijado {
+    position: fixed!important;
+    bottom: 150px!important;
+    z-index: 1000!important;
+}
+
 .close {
     float: right;
     font-size: 1.40625rem;

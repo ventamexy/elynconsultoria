@@ -133,8 +133,14 @@ button.close {
     object-fit: contain;
 }
 
-.boton-fijado {
-    position: fixed!important;
-    bottom: 150px!important;
-    z-index: 1000!important;
+.contenedor-botones {
+    position: fixed;
+    bottom: 31px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.contenedor-botones button {
+    position: relative!important;
+    bottom: 0!important;
 }
