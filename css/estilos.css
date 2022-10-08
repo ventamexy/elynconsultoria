@@ -1,0 +1,104 @@
+.logo {
+    font-size: 17px;
+}
+
+/*Ajustes para tamños moviles*/
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 12px;
+    }
+}
+
+.bg-section {
+    background-repeat: no-repeat;
+    /*no se repite la imagen*/
+    background-size: cover;
+    /*imagen al 100% del ancho*/
+    background-attachment: fixed;
+    /*posicion fija para la imagen*/
+    text-align: center;
+}
+
+.firts-img {
+    height: 200px;
+    width: 300px;
+}
+
+.firts-img:hover {
+    border: 10px solid #ffffff;
+}
+
+.label-formulario {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    background: white;
+    border-radius: 10px;
+    border-bottom: solid 5px #444;
+}
+
+.cta-4 {
+    background: #7e7e7e;
+}
+
+.md-xs-1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Minusculas */
+.minusculas {
+    text-transform: lowercase;
+}
+
+.float-left {
+    float: left;
+    padding-right: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+/*Servicios*/
+.service-content {
+    text-align: justify;
+}
+
+.letra-sub {
+    color: red;
+    text-decoration: underline;
+}
+
+.form-control {
+    color: black;
+}
+
+.sublogo {
+    position: absolute;
+    top: 30px;
+    left: 255px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+    .sublogo {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .sublogo {
+        position: absolute;
+        top: 30px;
+        left: 400px;
+    }
+}
