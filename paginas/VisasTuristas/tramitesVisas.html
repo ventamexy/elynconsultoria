@@ -214,7 +214,7 @@
             <div class="container">
                 <!-- Formulario -->
                 <form class="frmTramites p-5">
-                    <h1 class="ui dividing header p-2 text-center text-white">Trámite de visas</h1>
+                    <h1 class="ui dividing header p-2 text-center text-white">Formulario para asuntos de trámite de visas</h1>
                     <div class="row">
                         <div class="col-12 col-md-6 mb-3 form-group">
                             <label for="nombre">Nombre:</label>
@@ -256,36 +256,55 @@
                             <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
                         <div class="col-12 col-md-6 mb-3 form-group">
-                            <label for="tipoVisa">Tipo de visa:</label>
-                            <select class="form-select" name="tipoVisa" id="tipoVisa">
-                                <option value="0">--Seleccione--</option>
-                                <option value="1">Visas de trabajo</option>
-                                <option value="2">Visas de turismo, negocios y renovaciones</option>
-                                <option value="3">Visas perdidas y robadas</option>
-                                <option value="4">Visas asilo y refugio</option>
-                                <option value="5">Visas para inversionistas</option>
-                                <option value="6">Visas de estudiante</option>
-                                <option value="7">Visas de emergencia</option>
-                                <option value="8">Visas canadienses</option>
-                                <option value="9">Visas para grupos</option>
-                                <option value="10">Visas Europa, Asia, África y Sudamérica</option>
-                                <option value="11">Visas negadas/canceladas y revocadas</option>
-                            </select>
-                            <span class="campoObligatorio">Campo obligatorio</span>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3 form-group">
                             <label for="asuntoSolicitado">Asunto/Caso a solicitar:</label>
                             <select class="form-select" name="asuntoSolicitado" id="asuntoSolicitado">
                                 <option value="0">--Seleccione--</option>
                                 <option value="1">País</option>
                                 <option value="2">Para trabajadores</option>
                                 <option value="3">Viaje consular</option>
-                                <option value="4">Cita</option>
+                                <option value="4">Cita con el abogado</option>
                                 <option value="5">Cita consular</option>
                                 <option value="6">Certificación laboral</option>
-                                <option value="7">Clasificación de visa</option>
+                                <option value="7">Trámite de visa</option>
                                 <option value="8">Visado en línea</option>
                                 <option value="9">Renovaciones</option>
+                                <option value="10">Visas negadas/canceladas y revocadas</option>
+                                <option value="11">Visas perdidas y robadas</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 form-group d-none contenedor-select-pais">
+                            <label for="paisAsunto">Seleccione el país/continente:</label>
+                            <select class="form-select" name="paisAsunto" id="paisAsunto">
+                                <option value="0">--Seleccione--</option>
+                                <option value="1">México</option>
+                                <option value="2">Estados Unidos (USA)</option>
+                                <option value="3">Canadá</option>
+                                <option value="4">Australia</option>
+                                <option value="5">Nueva Zelanda</option>
+                                <option value="6">Asia - medio oriente</option>
+                                <option value="7">África</option>
+                                <option value="8">Sudamérica</option>
+                            </select>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 form-group d-none contenedor-select-visas">
+                            <label for="tipoVisa">Tipo de visa:</label>
+                            <select class="form-select" name="tipoVisa" id="tipoVisa">
+                                <option value="0">--Seleccione--</option>
+                                <option value="1">Visas de trabajo</option>
+                                <option value="2">Visas de turismo</option>
+                                <option value="3">Visas de negocios</option>
+                                <option value="4">Visas de asilo y refugio</option>
+                                <option value="5">Visas para inversionistas</option>
+                                <option value="6">Visas para estudiantes</option>
+                                <option value="7">Visas de emergencias</option>
+                                <option value="8">Visas canadienses</option>
+                                <option value="9">Visas para grupos</option>
+                                <option value="10">Visas para Europa</option>
+                                <option value="11">Visas para Asia</option>
+                                <option value="12">Visas para África</option>
+                                <option value="13">Visas para Sudamérica</option>
                             </select>
                             <span class="campoObligatorio">Campo obligatorio</span>
                         </div>

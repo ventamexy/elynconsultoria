@@ -48,21 +48,37 @@ window.addEventListener("load", function() {
                 throw "El número de teléfono es incorrecto.";
             } telCelular.removeClass("campoValidacion");
 
-
-            let tipoVisa = $("select[name='tipoVisa']");
-            let valorTipoVisa = tipoVisa.val().trim();
-            if ( valorTipoVisa < 1 || valorTipoVisa > 9 ) {
-                 tipoVisa.addClass("campoValidacion");
-                throw "El tipo de visa seleccionado es incorrecto, debe seleccionar entre la visa de turista y de trabajo.";
-            } tipoVisa.removeClass("campoValidacion");
-
-
+            
             let asuntoSolicitado = $("select[name='asuntoSolicitado']");
             let valorAsuntoSolicitado = asuntoSolicitado.val().trim();
-            if ( valorAsuntoSolicitado < 1 || valorAsuntoSolicitado > 9 ) {
+            if ( valorAsuntoSolicitado < 1 || valorAsuntoSolicitado > 11 ) {
                  asuntoSolicitado.addClass("campoValidacion");
                 throw "El asunto seleccionado es incorrecto.";
             } asuntoSolicitado.removeClass("campoValidacion");
+
+            
+            if ( valorAsuntoSolicitado == 1 ) {
+
+                let campoPaisAsunto = $("select[name='paisAsunto']");
+                let valoPaisAsunto = campoPaisAsunto.val().trim();
+                if ( valoPaisAsunto < 1 || valoPaisAsunto > 8 ) {
+                     campoPaisAsunto.addClass("campoValidacion");
+                    throw "El país seleccionado es incorrecto.";
+                } campoPaisAsunto.removeClass("campoValidacion");
+
+            }
+
+
+            if ( valorAsuntoSolicitado == 7 ) {
+
+                let tipoVisa = $("select[name='tipoVisa']");
+                let valorTipoVisa = tipoVisa.val().trim();
+                if ( valorTipoVisa < 1 || valorTipoVisa > 13 ) {
+                    tipoVisa.addClass("campoValidacion");
+                    throw "El tipo de visa seleccionada es incorrecta.";
+                } tipoVisa.removeClass("campoValidacion");
+
+            }
 
 
             let mensaje = $("textarea[name='mensaje']");
@@ -163,5 +179,27 @@ window.addEventListener("load", function() {
         contenedorImagenNotificacion.insertBefore(botonCierre);
 
     }
+
+    // --- Mostra select países
+    $(document).on("change", "select[name='asuntoSolicitado']", function() {
+        
+        let contenedorSelectPais = $(".contenedor-select-pais");
+        let contenedorSelectVisas = $(".contenedor-select-visas");
+        contenedorSelectPais.addClass("d-none");
+        contenedorSelectVisas.addClass("d-none");
+
+        let opcionSeleccionada = $(this)[0].value.trim();
+
+        if ( opcionSeleccionada == 1 ) {
+            contenedorSelectPais.removeClass("d-none");
+            return;
+        }
+        
+        if ( opcionSeleccionada == 7 ) {
+            contenedorSelectVisas.removeClass("d-none");
+            return;
+        }
+
+    });
 
 });
