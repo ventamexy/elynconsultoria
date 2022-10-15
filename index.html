@@ -224,76 +224,85 @@
         <br>
         <!-- Tramite de visas seccion -->
         <div class="container" id="sec-1">
-            <h1 class="titulovisas d-flex justify-content-center">ABOGADOS MIGRATORIOS</h1>
-            <br>
-            <br>
+            <h1 class="titulovisas d-flex justify-content-center mb-5">ABOGADOS MIGRATORIOS</h1>
         </div> 
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
-                <a><img src="img/galeria/passicon2.png" alt=""><h5></a>
-                    RESIDENCIAS</h5></a>
+                <a data-bs-toggle="modal" data-bs-target="#modalResidencias"><img src="img/galeria/passicon2.png" alt=""><h5>RESIDENCIAS</h5></a>
              </div>
         
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
-                <a><img src="img/galeria/passicon2.png" alt=""><h5></a>
+                <a data-bs-toggle="modal" data-bs-target="#modalPermisosMigratorios"><img src="img/galeria/passicon2.png" alt=""><h5>
                     PERMISOS MIGRATORIOS</h5></a>
              </div>
         
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
-                <a><img src="img/galeria/passicon2.png" alt=""><h5></a>
+                <a data-bs-toggle="modal" data-bs-target="#modalAsiloPolitico"><img src="img/galeria/passicon2.png" alt=""><h5>
                     ASILO POLITICO</h5></a>
              </div>
         
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
-                <a><img src="img/galeria/passicon2.png" alt=""><h5></a>
+                <a data-bs-toggle="modal" data-bs-target="#modalVisas"><img src="img/galeria/passicon2.png" alt=""><h5>
                     VISAS</h5></a>
              </div>
         </div>
         <br>
-        <div class="row align-items-center">
-               <h5>PARA:</h5>
-             
-        </div>
-        <br>  
+    <div class="row mb-3">
+        <center><h5>PARA:</h5></center>
+             <br>
+    </div>   
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
                 <a data-bs-toggle="modal" data-bs-target="#modalTramitesMexico"><img src="img/galeria/mexicoiconcolor.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Mexico</h6>
+                    <h6>Mexico</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
                 <a data-bs-toggle="modal" data-bs-target="#modalTramitesUSA"><img src="img/galeria/estadosunidosicon.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Estados Unidos</h6>
+                    <h6>Estados Unidos</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
                 <a data-bs-toggle="modal" data-bs-target="#modalVisasCanadienses"><img src="img/galeria/canadaicon2.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Canada</h6>
+                    <h6>Canada</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
                 <a data-bs-toggle="modal" data-bs-target="#modalVisasEuropa"><img src="img/galeria/mundoeuropa.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Europa, Asia, África y Sudamérica</h6>
+                    <h6>Europa, Asia, África y Sudamérica</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft"></div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft justify-content-center"
                 <a data-bs-toggle="modal" data-bs-target="#modalVisasAustralia"><img src="img/galeria/australiaicon.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Australia</h6>
+                    <h6>Australia</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft justify-content-center">
                 <a data-bs-toggle="modal" data-bs-target="#modalVisasNvaZelanda"><img src="img/galeria/nvazelandaicon.png" alt=""></a>
                 <div>
-                    <h6>Tramites para Nueva Zelanda</h6>
+                    <h6>Nueva Zelanda</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                    <a data-bs-toggle="modal" data-bs-target="#modalVisasMedioOriente"><img src="img/galeria/medioorienteicon.png" alt=""></a>
+                    <div>
+                        <h6>Medio Oriente</h6>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+    </div>
+        <div>
+            <!-- <hr size="20px" color="black" /> -->
+            <hr size="5px" width="50%" align="center" color="red"/>
         </div>
             <div class="row menuvisas">
                 <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
@@ -933,7 +942,107 @@
             </div>
         </div>
     </section>
-    <!-- Modal Visas -->
+    <!-- Modal Permisos Migratorios -->
+    <div class="modal fade" id="modalPermisosMigratorios" tabindex="-1" role="dialog" aria-labelledby="modalTitlePermisosMigratorios" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitlePermisosMigratorios">
+                        <i class="fa fa-info-circle"></i>
+                        Permisos Migratorios
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Permisos de Trabajo
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Permisos de Estudio/Trabajo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Asilo Politico -->
+    <div class="modal fade" id="modalAsiloPolitico" tabindex="-1" role="dialog" aria-labelledby="modalTitleAsiloPolitico" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleAsiloPolitico">
+                        <i class="fa fa-info-circle"></i>
+                        Asilo Politico
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Asilo Afirmativo
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Asilo Defensivo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Residencias -->
+    <div class="modal fade" id="modalResidencias" tabindex="-1" role="dialog" aria-labelledby="modalTitleResidencias" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleResidencias">
+                        <i class="fa fa-info-circle"></i>
+                        Residencias
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Residencia Temporal
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Residencia Permanente
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Peticion Laboral
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                Peticion Familiar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Visas de Trabajo -->
     <div class="modal fade" id="modalVisasTrabajo" tabindex="-1" role="dialog" aria-labelledby="modalTitleVisasTrabajo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
