@@ -181,6 +181,53 @@
                 <!-- Mask & flexbox options-->
             </div>
         </div>
+        <!-- iconos de acceso a tramites -->
+        <div class="container border-top-form">
+            <div class="container" id="sec-1">
+                <h1 class="titulovisas d-flex justify-content-center text-white">TRAMITES A REALIZAR EN:</h1>
+                <br>
+                <div class="row menuvisas">
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalResidencias"><img src="/img/galeria/mexicoiconcolor.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">MEXICO</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalVisasUT"><img src="/img/galeria/estadosunidosicon.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">ESTADOS UNIDOS</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalLoteriasVisas"><img src="/img/galeria/canadaicon2.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">CANADA</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalPermisosTP"><img src="/img/galeria/mundoeuropa.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">EUROPA, ASIA, AFRICA Y SUDAMERICA</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row menuvisas justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalAsiloRef"><img src="/img/galeria/australiaicon.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">AUSTRALIA</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft">
+                        <a data-bs-toggle="modal" data-bs-target="#modalDACADAPA"><img src="/img/galeria/nvazelandaicon.png" alt=""></a>
+                        <div>
+                            <h6 class="text-white">NUEVA ZELANDA</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--inicio de mi cuerpo principal con los formularios-->
         <section class="container">
             <div class="ui border-top-form">
@@ -346,6 +393,379 @@
             </div>
         </section>
     </main>
+    <!-- Modals Residencias -->
+    <div class="modal fade" id="modalResidencias" tabindex="-1" role="dialog" aria-labelledby="modalTitleResidencias" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleResidencias">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                        RESIDENCIAS
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/residenciaicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Residencia Temporal
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Residencia Permanente
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Peticion Laboral
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Peticion Familiar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals Visa U y T -->
+    <div class="modal fade" id="modalVisasUT" tabindex="-1" role="dialog" aria-labelledby="modalTitleVisasUT" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleVisasUT">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         VISAS U y T
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/visasuticon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Extension de Visa U
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Elegibilidad para Estatus "No Migrante U"
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Peticion Laboral
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Peticion Familiar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modals Loterias de Visas  -->
+    <div class="modal fade" id="modalLoteriasVisas" tabindex="-1" role="dialog" aria-labelledby="modalTitleLoteriasVisas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleLoteriasVisas">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         LOTERIAS DE VISAS
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/visasferiaicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asesorias
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Seguimiento de Tramites
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Requisitos para Participar
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Resultados Finales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals Permisos Temporales y Permanentes -->
+    <div class="modal fade" id="modalPermisosTP" tabindex="-1" role="dialog" aria-labelledby="modalTitlePermisosTP" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitlePermisosTP">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         LOTERIAS DE VISAS
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/permtempoicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Permisos de Estudio
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Permisos de Trabajo
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Permisos de Estudio/Trabajo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals Asilo y Refugio -->
+    <div class="modal fade" id="modalAsiloRef" tabindex="-1" role="dialog" aria-labelledby="modalTitleAsiloRef" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleAsiloRef">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         ASILO Y REFUGIO
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/refugioicon.webp" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asilo Afirmativo
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asilo Defensivo
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Refugio Humanitario
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals DACA/DAPA  -->
+    <div class="modal fade" id="modalDACADAPA" tabindex="-1" role="dialog" aria-labelledby="modalTitleDACADAPA" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleDACADAPA">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         DACA / DAPA
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/dacaicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    DACA (Requisitos/Aplicacion/Seguimiento)
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    DAPA (Requisitos/Aplicacion/Seguimiento)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals FOIA/RECORDS  -->
+    <div class="modal fade" id="modalFOIA" tabindex="-1" role="dialog" aria-labelledby="modalTitleFOIA" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleFOIA">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         DACA / DAPA
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/foiaicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    FOIA (Asesorias/Aplicacion/Seguimiento)
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Records (Asesorias y Revisiones)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals Mociones y Reapertura de Casos -->
+    <div class="modal fade" id="modalMociones" tabindex="-1" role="dialog" aria-labelledby="modalTitleMociones" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitleMociones">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         DACA / DAPA
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/reaperturacasosicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asesorias/Analisis para Presentar Hechos Nuevos en sus Casos Denegados
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Representacion Legal en Reapertura de Casos y Apelaciones
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals Permisos Humanitarios  -->
+    <div class="modal fade" id="modalPermisosHum" tabindex="-1" role="dialog" aria-labelledby="modalTitlePermisosHum" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitlePermisosHum">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         PERMISOS HUMANITARIOS
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/ciudadaniasicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Tramites/Requisitos/Aplicacion
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asesorias
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals VAWA y Perdones -->
+    <div class="modal fade" id="modalPerdones" tabindex="-1" role="dialog" aria-labelledby="modalTitlePerdones" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="modalTitlePerdones">
+                        <i class="fa fa-info-circle justify-content-center" ></i>
+                         VAWA Y PERDONES
+                    </h5>
+                    <div class="row col-md-6">
+                        <img src="/img/galeria/vawaicon.png" alt="" width="60%" height="60%">
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Asesorias (Elegibilidad/Autopeticiones)
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="fa fa-check"></i>
+                                    Representacion Legal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de Modals -->
     <footer class="site-footer m-0">
         <div class="container">
             <div class="row mb-3">
